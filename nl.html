@@ -60,6 +60,13 @@
     <!--====== HEADER PART START ======-->
 
     <header class="header-area">
+      <div class="modal">
+        <div
+          id="modalBox"
+          class="col-12 d-flex flex-row flex-wrap justify-content-around"
+        ></div>
+        <div class="closeModal">+</div>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -89,14 +96,10 @@
                     <a data-scroll-nav="0" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a data-scroll-nav="0" href="#product">Producten</a>
-                  </li>
-
-                  <li class="nav-item">
                     <a data-scroll-nav="0" href="#service">Diensten</a>
                   </li>
                   <li class="nav-item">
-                    <a data-scroll-nav="0" href="#showcase">Vitrine</a>
+                    <a data-scroll-nav="0" href="#showcase">Onze Projekten</a>
                   </li>
                   <li class="nav-item">
                     <a data-scroll-nav="0" href="#contact">Contact</a>
@@ -124,441 +127,164 @@
 
     <!--====== HEADER PART ENDS ======-->
 
-    <!--====== SLIDER PART START ======-->
-
-    <section id="home" class="slider-area pt-100 mt-50">
-      <div class="container-fluid position-relative">
-        <div class="slider-active">
-          <div class="single-slider">
-            <div class="slider-bg">
-              <div class="row no-gutters align-items-center">
-                <div class="col-lg-4 col-md-5">
-                  <div class="slider-product-image d-none d-md-block">
-                    <img src="assets/images/slider/1.jpg" alt="Slider" />
-                  </div>
-                  <!-- slider product image -->
-                </div>
-                <div class="col-lg-8 col-md-7">
-                  <div class="slider-product-content">
-                    <h1
-                      class="slider-title mb-10"
-                      data-animation="fadeInUp"
-                      data-delay="0.3s"
-                    >
-                      <span>Veranda</span> en <span>Carport</span>
-                    </h1>
-                    <p
-                      class="mb-25"
-                      data-animation="fadeInUp"
-                      data-delay="0.9s"
-                    >
-                      Als je in een auto wilt zitten die niet in de zon heeft
-                      gestaan ​​of buiten in de regen wilt zitten zonder nat te
-                      worden, dan ben je hier aan het juiste adres!
-                      <strong>Bekijk onze producten!</strong>
-                    </p>
-                    <a
-                      class="main-btn"
-                      href="#product"
-                      data-animation="fadeInUp"
-                      data-delay="1.5s"
-                      >Explore Products <i class="lni-chevron-right"></i
-                    ></a>
-                  </div>
-                  <!-- slider product content -->
-                </div>
-              </div>
-              <!-- row -->
-            </div>
-            <!-- container -->
-          </div>
-          <!-- single slider -->
-
-          <div class="single-slider">
-            <div class="slider-bg">
-              <div class="row no-gutters align-items-center">
-                <div class="col-lg-4 col-md-5">
-                  <div class="slider-product-image d-none d-md-block">
-                    <img src="assets/images/slider/3.jpg" alt="Slider" />
-                  </div>
-                  <!-- slider product image -->
-                </div>
-                <div class="col-lg-8 col-md-7">
-                  <div class="slider-product-content">
-                    <h6
-                      class="slider-title mb-10"
-                      data-animation="fadeInUp"
-                      data-delay="0.3s"
-                    >
-                      <span>Veranda&</span> <span>Beyond</span> is hier om
-                      <span> te dienen</span>
-                    </h6>
-                    <p
-                      class="mb-25"
-                      data-animation="fadeInUp"
-                      data-delay="0.9s"
-                    >
-                      Stel een vraag of vraag een gratis offerte aan. <br />
-                      Wij zullen u zo spoedig mogelijk antwoorden met de
-                      gevraagde informatie!
-                    </p>
-                    <a
-                      class="main-btn"
-                      href="#service"
-                      data-animation="fadeInUp"
-                      data-delay="1.5s"
-                      >See Our Services<i class="lni-chevron-right"></i
-                    ></a>
-                  </div>
-                  <!-- slider product content -->
-                </div>
-              </div>
-              <!-- row -->
-            </div>
-            <!-- container -->
-          </div>
-          <!-- single slider -->
-
-          <div class="single-slider">
-            <div class="slider-bg">
-              <div class="row no-gutters align-items-center">
-                <div class="col-lg-4 col-md-5">
-                  <div class="slider-product-image d-none d-md-block">
-                    <img src="assets/images/slider/2.jpg" alt="Slider" />
-                  </div>
-                  <!-- slider product image -->
-                </div>
-                <div class="col-lg-8 col-md-7">
-                  <div class="slider-product-content">
-                    <h1
-                      class="slider-title mb-10"
-                      data-animation="fadeInUp"
-                      data-delay="0.3s"
-                    >
-                      <span>Ontvang</span> een gratis <span>offerte</span>
-                    </h1>
-                    <p
-                      class="mb-25"
-                      data-animation="fadeInUp"
-                      data-delay="0.9s"
-                    >
-                      Nadat u uw eigen product heeft aangepast, vult u de
-                      vereiste informatie in het onderstaande contactformulier
-                      in om een<strong>gratis offerte te ontvangen!</strong>
-                    </p>
-                    <p>
-                      <a
-                        class="main-btn"
-                        href="#contact"
-                        data-animation="fadeInUp"
-                        data-delay="1.5s"
-                        >Neem contact met ons op
-                        <i class="lni-chevron-right"></i
-                      ></a>
-                    </p>
-                  </div>
-
-                  <!-- slider product content -->
-                </div>
-              </div>
-              <!-- row -->
-            </div>
-            <!-- container -->
-          </div>
-          <!-- single slider -->
-        </div>
-        <!-- slider active -->
-        <div class="slider-social">
-          <div class="row justify-content-end">
-            <div class="col-lg-7 col-md-6">
-              <ul class="social text-right">
-                <li>
-                  <a target="_blank" href="https://www.facebook.com"
-                    ><i class="lni-facebook-filled"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.twitter.com"
-                    ><i class="lni-twitter-original"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.instagram.com"
-                    ><i class="lni-instagram"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <!--PICTURE PART STARTS-->
+    <section class="col-m-10 d-flex mx-auto flex-column flex-md-row mt-190">
+      <div class="w-100">
+        <img
+          style="width: 100%; border: 5px solid white; border-radius: 20px"
+          src="assets/images/showcase/fullSystem.jpg"
+          alt=""
+        />
       </div>
-      <!-- container fluid -->
+      <div class="d-none d-md-flex flex-column w-50">
+        <img
+          style="width: 100%; border: 5px solid white; border-radius: 20px"
+          src="assets/images/showcase/glassSystem.jpg"
+          alt=""
+        />
+        <img
+          style="width: 100%; border: 5px solid white; border-radius: 20px"
+          src="assets/images/showcase/carport.jpg"
+          alt=""
+        />
+      </div>
     </section>
+    <!--PICTURE PART ENDS-->
 
-    <!--====== SLIDER PART ENDS ======-->
-
-    <!--====== PRODUCT PART START ======-->
-
-    <section id="product" class="product-area pt-100 pb-130">
+    <section
+      id="contact"
+      style="background-color: #fffaf6"
+      class="contact-area pt-115"
+    >
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-4">
-            <div class="collection-menu text-center mt-30">
-              <h4 class="collection-tilte">OUR PRODUCTS</h4>
-              <div
-                class="nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <a
-                  class="active product-pill"
-                  id="v-pills-veranda-tab"
-                  data-toggle="pill"
-                  href="#v-pills-veranda"
-                  role="tab"
-                  aria-controls="v-pills-veranda"
-                  aria-selected="true"
-                  >Veranda</a
-                >
-
-                <a
-                  class="product-pill"
-                  id="v-pills-carport-tab"
-                  data-toggle="pill"
-                  href="#v-pills-carport"
-                  role="tab"
-                  aria-controls="v-pills-carport"
-                  aria-selected="false"
-                  >Carport</a
-                >
-
-                <a
-                  class="product-pill"
-                  id="v-pills-glass-tab"
-                  data-toggle="pill"
-                  href="#v-pills-glass"
-                  role="tab"
-                  aria-controls="v-pills-glass"
-                  aria-selected="false"
-                  >Glassystemen</a
-                >
-              </div>
-              <!-- nav -->
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="contact-title text-center">
+              <h2 class="title">Choose a Product to Get a Free Quote</h2>
             </div>
-            <!-- collection menu -->
-          </div>
-          <div class="col-lg-9 col-md-8">
-            <div class="tab-content" id="v-pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="v-pills-veranda"
-                role="tabpanel"
-                aria-labelledby="v-pills-veranda-tab"
-              >
-                <div class="product-items mt-30">
-                  <div class="flex-row product-items-active">
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="verandaPolyTop"
-                            src="assets/images/product/poly-roof.jpg"
-                            alt="polycarbonate roof"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Polycarbonaat Dak</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="verandaGlassTop"
-                            src="assets/images/product/glass-roof.jpg"
-                            alt="glass roof"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Glazen Dak</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="verandaAluminumSideWall"
-                            src="assets/images/product/sidewall.jpg"
-                            alt="aluminum side wall"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Aluminium zijwand</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="verandaPolySideWall"
-                            src="assets/images/product/poly-sidewall.jpg"
-                            alt="polycarbonate side wall"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Polycarbonaat zijwand</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                  </div>
-                  <!-- row -->
-                </div>
-                <!-- product items -->
-              </div>
-              <!-- tab pane -->
-
-              <div
-                class="tab-pane fade"
-                id="v-pills-carport"
-                role="tabpanel"
-                aria-labelledby="v-pills-carport-tab"
-              >
-                <div class="product-items mt-30">
-                  <div class="row product-items-active">
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="carportPolyTop"
-                            src="assets/images/product/carport-poly-roof.jpg"
-                            alt="Polycarbonate Top Carport"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Polycarbonaat Dak</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="carportGlassTop"
-                            src="assets/images/product/glass-roof.jpg"
-                            alt="Glass Top Carport"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Glazen Dak</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="carportWall"
-                            src="assets/images/product/carport-wall.jpg"
-                            alt="Carport wall"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Aluminium zijwand</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                  </div>
-                  <!-- row -->
-                </div>
-                <!-- product items -->
-              </div>
-              <!-- tab pane -->
-
-              <div
-                class="tab-pane fade"
-                id="v-pills-glass"
-                role="tabpanel"
-                aria-labelledby="v-pills-glass-tab"
-              >
-                <div class="product-items mt-30">
-                  <div class="row product-items-active">
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="glassSystemPhoto"
-                            src="assets/images/product/glass-system.jpg"
-                            alt="Glass System"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Schuifglassysteem</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="sideGlassSystem"
-                            src="assets/images/product/glass-system-side.jpg"
-                            alt="Side Glass System"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Zijglassysteem</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="tintedGlass"
-                            src="assets/images/product/glass-system-dark.jpg"
-                            alt="Dark Glasses"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Getint glas</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                  </div>
-                  <!-- row -->
-                </div>
-                <!-- product items -->
-              </div>
-              <!-- tab pane -->
-            </div>
-            <!-- tab content -->
+            <!-- contact title -->
           </div>
         </div>
         <!-- row -->
-        <div
-          id="big-image"
-          class="mt-20 mx-auto d-flex flex-column flex-md-row flex-wrap justify-content-between"
-        ></div>
+
+        <div class="col-lg-12">
+          <div>
+            <div
+              class="col-12 d-flex flex-column flex-md-row justify-content-around flex-wrap p-5"
+              style="border-top: solid 1px orange"
+            >
+              <div class="card col-12 col-lg-3 m-2 p-0 text-center">
+                <img
+                  class="card-img-top"
+                  id="veranda"
+                  src="assets/images/showcase/fullSystem.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-title m-3">
+                  <h5 style="border-bottom: 1px solid orange">Veranda</h5>
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <a
+                    href="assets/dutchForms/verandaFormDutch.html"
+                    class="main-btn mb-10"
+                  >
+                    Vraag offerte aan
+                  </a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3 m-2 p-0">
+                <img
+                  class="card-img-top"
+                  id="carport"
+                  src="assets/images/showcase/carport.jpg"
+                  alt="Card image cap"
+                />
+                <div
+                  class="card-title text-center m-3"
+                  style="border-bottom: 1px solid orange"
+                >
+                  <h5>Carport</h5>
+                </div>
+
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <a
+                    href="assets/dutchForms/carportFormDutch.html"
+                    class="main-btn mb-10"
+                  >
+                    Vraag offerte aan
+                  </a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3 m-2 p-0">
+                <img
+                  id="slidingGlassDoors"
+                  class="card-img-top"
+                  src="assets/images/services/services.jpg"
+                  alt="Card image cap"
+                />
+                <div
+                  class="card-title text-center m-3"
+                  style="border-bottom: 1px solid orange"
+                >
+                  <h5>Glazen Schuifwanden</h5>
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <a
+                    href="assets/dutchForms/glassSystemFormDutch.html"
+                    class="main-btn mb-10"
+                  >
+                    Vraag offerte aan
+                  </a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3 m-2 p-0">
+                <img
+                  id="awnings"
+                  class="card-img-top"
+                  src="assets/images/showcase/fullSystem.jpg"
+                  alt="Card image cap"
+                />
+                <div
+                  class="card-title text-center m-3"
+                  style="border-bottom: 1px solid orange"
+                >
+                  <h5>Zonweringen</h5>
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <a
+                    href="assets/englishForms/question.html"
+                    class="main-btn mb-10"
+                  >
+                    Vraag offerte aan
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="text-center">
+              <small
+                >Klik op een van de systemen om een gratis offerte te
+                ontvangen!</small
+              >
+            </p>
+            <!-- row -->
+          </div>
+
+          <!-- row -->
+        </div>
+        <!-- contact box -->
       </div>
       <!-- container -->
     </section>
 
-    <!--====== PRODUCT PART ENDS ======-->
+    <!--====== CONTACT PART ENDS ======-->
 
     <!--====== SERVICES PART START ======-->
 
@@ -677,7 +403,7 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="showcase-title pt-25">
-              <h2 class="title">Vitrine</h2>
+              <h2 class="title">Onze Projekten</h2>
             </div>
             <!-- showcase title -->
           </div>

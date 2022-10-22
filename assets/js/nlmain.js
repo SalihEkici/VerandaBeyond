@@ -245,226 +245,228 @@ $(function () {
 });
 //===== purchase specification selector
 
-//===== Product info
-const info = document.getElementById("big-image");
+const modal = document.querySelector(".modal");
+const nodeListImages = document.querySelectorAll(".card-img-top");
+const arrayImages = Array.from(nodeListImages);
+const closeModal = document.querySelector(".closeModal");
+const details = document.getElementById("modalBox");
+const productImageContainer = document.getElementById("equipmentImage");
 
-//veranda buttons
-const verandaGlassTop = document.getElementById("verandaGlassTop");
-const verandaPolyTop = document.getElementById("verandaPolyTop");
-const verandaAluminumSideWall = document.getElementById(
-  "verandaAluminumSideWall"
-);
-const verandaPolySideWall = document.getElementById("verandaPolySideWall");
+nodeListImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    modal.style.display = "block";
+    if (image.id == "veranda") {
+      details.innerHTML = `
+                              <div class="card col-10 col-lg-5 p-0 mt-30">
+                                <img 
+                                src="assets/images/services/services.jpg"
+                                alt="Card image cap"
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Polycarbonaat dak Veranda</h5>
+                                  <div class="card-text">
+                                    <p >Polycarbonaatplaat is een zeer goed product om een hoogwaardig dakafwerking voor uw veranda te realiseren. Ook is het mogelijk om van deze polycarbonaat platen een spiestuk of een zijwand aan uw luifel te maken.</p>
+                                    <ul class="p-3">
 
-//===== carport buttons
-const carportPolyTop = document.getElementById("carportPolyTop");
-const carportGlassTop = document.getElementById("carportGlassTop");
-const carportWall = document.getElementById("carportWall");
-
-//===== glass system buttons
-const tintedGlass = document.getElementById("tintedGlass");
-const sideGlassSystem = document.getElementById("sideGlassSystem");
-const glassSystemPhoto = document.getElementById("glassSystemPhoto");
-const products = document.querySelectorAll("product-pill");
-const productsArray = [...products];
-
-//===== veranda info
-verandaGlassTop.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/glass-roof.jpg" alt="glazen dak">
-    <div>
-      <p class="mb-20 text-center">
-        Wilt u altijd een perfecte lichtinval? <br>
-        En kun je ook genieten van de sterrenhemel en voorbijtrekkende wolken? <br>
-        Dan is een glazen veranda de beste keuze voor jou.
-      </p>
-      <ul class="mt-20 mb-auto mt-auto text-center">
-        Veranda glazen blad:
-          <li>- 10 jaar garantie</li>
-          <li>- Spot-LED's kunnen worden toegevoegd</li>
-          <li>- Drie kleuropties (Antraciet, Zwart, Crème)</li>
-          <li>- Gelaagd glas</li>
-          <li>- Maximaal 400 cm lang</li>
-          <li>- Standaard een ronde of klassieke decoratieve goot</li>
-      </ul>
-    </div>
-    `;
-});
-
-verandaPolyTop.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/poly-roof.jpg" alt="polycarbonaat dak">
-    <div>
-      <p class="mb-20 text-center">
-          Polycarbonaat plaat is een zeer goed product <br>
-          om een ​​hoogwaardige dakafwerking van uw veranda te realiseren. <br>
-          Het is ook mogelijk om een ​​wig of zijwand te maken <br>
-          van uw voortent uit deze polycarbonaatplaten.
-      </p>
-      <ul class="mt-20 mb-auto mt-auto text-center">
-      Veranda polycarbonaat blad:
-        <li>- 10 jaar garantie</li>
-        <li>- Spot-LED's kunnen worden toegevoegd</li>
-        <li>- Drie kleuropties (Antraciet, Zwart, Crème)</li>
-        <li>- Standaard een ronde of klassieke decoratieve goot</li>
-        <li>- Heldere of ondoorzichtige opties voor zonlicht</li>
-      </ul>
-    </div>
+                                    <li> Verkrijgbaar in 3 kleuren (Antraciet, zwart en crème)</li>
+                                  
+                                    <li>Staanders in halfrond of vierkant</li>
+                                  
+                                    <li> Dakbedekking polycarbonaat helder of opaal</li>
+                                  
+                                    <li> Verlichting LED-spotset</li>
+                                    
+                                  
+                                    <li> 10 jaar garantie op de profiel en kleurechtheid</li>
+                                    </ul>
+                                  </div>
+                                  <a
+                                  href="assets/englishForms/verandaForm.html"
+                                  class="main-btn mb-10 mt-50"
+                                  >
+                                  Vraag offerte aan
+                                  </a>
+                                </div>
+                              </div>
+                              
+                              <div class="card col-10 col-lg-5 p-0 mt-30">
+                                <img 
+                                src="assets/images/services/services.jpg"
+                                alt="Card image cap"
+                                />
+                                  <div class="card-body">
+                                    <h5 class="card-title">Glazen dak Veranda</h5>
+                                    <div class="card-text">
+                                      <p >Wilt u altijd een perfecte lichtinval? En daarnaast kunnen genieten van de sterrenhemel en voorbijdrijvende wolken? Dan is een glazen veranda voor u de beste keuze.</p>
+                                      <ul class="p-3">
+                                      <li> Verkrijgbaar in 3 kleuren (Antraciet, zwart en crème)</li>
+                                      <li> Lengtes mogelijk tot maximaal 400cm</li>
+                                      <li> Dakbedekking 44.2 gelaagd veiligheidsglas</li>
+                                      <li> Verlichting LED-spotset</li>
+                                      <li> Standaard een ronde of klassieke siergoot</li>
+                                      <li> U-profielen, voorzien van tochtstrips</li>
+                                      </ul>
+                                    </div>
+                                  
+                                <a
+                                  href="assets/englishForms/verandaForm.html"
+                                  class="main-btn mb-10"
+                                >
+                                  Vraag offerte aan
+                                </a>
+                                </div>
+                            </div>
+                          
       `;
+    } else if (image.id == "carport") {
+      details.innerHTML = `
+                              <div class="card col-10 col-lg-5 p-0 mt-30">
+                                <img 
+                                src="assets/images/services/services.jpg"
+                                alt="Card image cap"
+                                />
+                                  <div class="card-body">
+                                    <h5 class="card-title">Polycarbonate Roof Carport</h5>
+                                    <div class="card-text">
+                                      <p>
+                                      An aluminum car cover with a polycarbonate roof that has a very long lifespan, 
+                                      provides the best protection for you car and also requires little maintenance. 
+                                      In addition, an aluminum cover from Veranda &amp; Beyond also offers a beautiful appearance.
+                                      </p>
+                                      <ul class="p-3">
+
+                                      <li> Available in 3 colors (Antraciet, black and cream)</li>
+                                    
+                                      <li> Roofing polycarbonate clear or opaque</li>
+                                    
+                                      <li> Round or straight model gutters</li>
+                                    
+                                      <li> Lighting LED spotlight set</li>
+                                      
+                                      <li> 10-year warranty on profile and color accuracy</li>
+                                      </ul>
+                                    </div>
+                                    <a
+                                    href="assets/englishForms/verandaForm.html"
+                                    class="main-btn mb-10 mt-50"
+                                    >
+                                    Vraag offerte aan
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="card col-10 col-lg-5 p-0 mt-30">
+                                <img 
+                                src="assets/images/services/services.jpg"
+                                alt="Card image cap"
+                                />
+                                  <div class="card-body">
+                                  <h5 class="card-title">Glass Roof Carport</h5>
+                                  <div class="card-text">
+                                    <p >Would you prefer a glass carport? That is also possible at Valk &amp; Beyond.</p>
+                                    <ul class="p-3">
+
+                                    <li>Available in 3 colors (Antraciet, black and cream)</li>
+
+                                    <li> Roof covering 44.2 laminated safety glass</li>
+
+                                    <li> Lengths possible up to 400cm</li>
+                                  
+                                    <li> Round or straight model gutters</li>
+
+                                    <li> U-profiles, with draught strips</li>
+                                    
+                                    <li> Lighting LED spotlight set</li>
+                                    
+                                  
+                                    <li>10-year warranty on profile and color accuracy</li>
+                                    </ul>
+                                  </div>
+                                  <a
+                                        href="assets/englishForms/verandaForm.html"
+                                        class="main-btn mb-10"
+                                      >
+                                      Vraag offerte aan
+                                      </a>
+                                  </div>
+                                </div>
+                          
+      `;
+    } else if (image.id == "slidingGlassDoors") {
+      details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
+                            <img 
+                            src="assets/images/services/services.jpg"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                            <h5 class="card-title">Sliding Glass Doors</h5>
+                            <div class="card-text">
+                              <p >The hard glass panels run on wheels with bearings and are equipped with carriers that automatically pull the panels along when closing. The glass panels run on a narrow bottom profile, which consists of up to 6 tracks, depending on the number of panels required. You can choose a wall that closes on the left, right or in the middle.
+                              According to the dimensions of the glass panels, they are supplied in 10 mm ESG safety glass.
+                              
+                              The aluminum profiles are powder coated. You have a choice of two standard colors: cream-white and anthracite.</p>
+                              <ul class="p-3">
+
+                              <li> Extremely compact and strong aluminum profile</li>
+
+                              <li> Uninsulated</li>
+
+                              <li> With colored draught strip and fasteners</li>
+                            
+                              <li> 10 mm tempered safety glass</li>
+
+                              <li> Rain and wind proof</li>
+                              
+                              <li> Aluminium strong bottom rail, 2 cm high</li>
+                              
+                            
+                              <li>10-year warranty on profile and color accuracy</li>
+                              </ul>
+                            </div>
+                              <a
+                                    href="assets/englishForms/verandaForm.html"
+                                    class="main-btn mb-10"
+                                  >
+                                    Get a quote
+                                  </a>
+                              </div>
+                            </div>`;
+    } else if (image.id == "awnings") {
+      details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
+                            <img 
+                            src="assets/images/services/services.jpg"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                            <h5 class="card-title">Awnings</h5>
+                            <div class="card-text">
+                              <p >We only work with materials of the best quality. Vernda &amp; Beyond supplies awnings that you can enjoy for many years. We guarantee excellent service and a high degree of customer friendliness. Only when you are satisfied, we are satisfied. Applied above the glass, the fabric is equipped with a protective finish.
+
+                              The awning fabric is available in both antraciet and cream.</p>
+                              <ul class="p-3">
+                                <li> Top quality</li>
+                                <li> Very high quality fabric</li>
+                                <li> Free of charge customization</li>
+                                <li> Motor: Somfy LTS with remote control</li>
+                                <li> Only available for mounting above the canopy</li>
+                                <li> Water repellent</li>
+                              </ul>
+                            </div>
+                              <a
+                                    href="assets/englishForms/verandaForm.html"
+                                    class="main-btn mb-10"
+                                  >
+                                    Get a quote
+                                  </a>
+                              </div>
+                            </div>`;
+    }
+
+    document.body.style.overflowY = "hidden";
+  });
 });
-
-verandaAluminumSideWall.addEventListener("click", () => {
-  info.innerHTML = `
-<img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/sidewall.jpg" alt="aluminium zijwand">
-<div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-<p class="mb-20">
-U kunt ervoor kiezen om de wanden van uw veranda te sluiten. <br>
-Bekijk bij ons de vele mogelijkheden. <br>
-De aluminium wanden zijn onderhoudsvrij <br>
-en verkrijgbaar in verschillende kleuren.
-</p>
-<ul>
-Veranda aluminium zijwand:
-  <li>- Duurzame en onderhoudsvriendelijke zijwanden voor uw veranda</li>
-  <li>- Gepoedercoat aluminium in 2 standaardkleuren</li>
-  <li>- Kan worden gecombineerd met een wigvormig frame voor meer licht</li>
-  <li>- Dikte panelen 16 MM & Hoogte panelen 160 MM</li>
-  <li>- Sluit een dak tot een hoogte van 190 cm</li>
-</ul>
-</div>
-`;
-});
-
-verandaPolySideWall.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/poly-sidewall.jpg" alt="polycarbonaat zijwand">
-    <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-      <p class="mb-20">Wilt u altijd perfect licht in uw veranda? <br>
-      Met de polycarbonaat zijwand, <br>
-      je zit beschut zonder daglicht te verliezen.</p>
-      <ul >
-      Veranda polycarbonaat zijwand:
-        <li>- 16 mm polycarbonaat</li>
-        <li>- Keuzes uit ondoorzichtig (vermindert zonlicht met 80%) en helder</li>
-        <li>- Verkrijgbaar in verschillende maten</li>
-      </ul>
-    </div>
-    `;
-});
-
-//===== carport info
-
-carportGlassTop.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" id="carportGlassTop" src="assets/images/product/glass-roof.jpg" alt="Glass Top Carport">
-    <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-      <p class="mb-20">Heeft u liever een glazen carport? <br>
-       Ook dat kan bij Veranda&Beyonde.</p>
-      <ul >
-      Carport glazen blad:
-        <li>- Twee kleuropties (Antraciet en Creame)</li>
-        <li>- Gelaagd glas</li>
-        <li>- Maximaal 400 cm lang</li>
-        <li>- LED's kunnen worden toegevoegd</li>
-        <li>- Standaard of ronde gootopties</li>
-      </ul>
-    </div>
-    `;
-});
-
-carportPolyTop.addEventListener("click", () => {
-  info.innerHTML = `
-<img class="d-none d-md-block col-6 w-50 h-auto" id="carpotPolyTop" src="assets/images/product/carport-poly-roof.jpg" alt="Polycarbonaat bovencarport">
-<div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-  <p class="mb-20">
-  Een aluminium autohoes is een mooie <br>
-  bekleding met een zeer lange levensduur, <br>
-   die ook weinig onderhoud vraagt. <br>
-    Daarnaast een aluminium afdekkap <br>
-     van Veranda&Beyonde ook <br>
-     biedt een prachtig uitzicht.</p>
-  <ul>
-  Carport Polycarbonaat Dak:
-    <li>- Drie kleuropties (Antraciet, Zwart en Creame)</li>
-    <li>- Keuzes uit ondoorzichtig (vermindert zonlicht met 80%) en helder</li>
-    <li>- Maximaal 400 cm lang</li>
-    <li>- LED's kunnen worden toegevoegd</li>
-    <li>- Standaard of ronde gootopties</li>
-    <li>- 10 jaar garantie op profielen en kleur van polycarbonaat</li>
-  </ul>
-</div>
-`;
-});
-
-carportWall.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" id="carportWall" src="assets/images/product/carport-wall.jpg" alt="Carportmuur">
-    <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-      <p class="mb-20">Wilt u altijd perfect licht in uw veranda? <br>
-      Met de polycarbonaat zijwand, <br>
-      je zit beschut zonder daglicht te verliezen.</p>
-      <ul >
-      Carport Zijwand:
-        <li>- Drie kleuropties (Antraciet, Zwart en Creame)</li>
-        <li>- Keuzes uit ondoorzichtig (vermindert zonlicht met 80%) en helder</li>
-        <li>- Maximaal 400 cm lang</li>
-        <li>- LED's kunnen worden toegevoegd</li>
-        <li>- Standaard of ronde gootopties</li>
-        <li>- 10 jaar garantie op profielen en kleur van polycarbonaat</li>
-      </ul>
-    </div>
-    `;
-});
-
-glassSystemPhoto.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/glass-system.jpg" alt="Glassysteem">
-    <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-      <p class="mb-20">Wilt u altijd perfect licht in uw veranda? <br>
-      Met de polycarbonaat zijwand, <br>
-      je zit beschut zonder daglicht te verliezen.</p>
-      <ul >
-      Glassystemen:
-        <li>- 10 mm gehard glas</li>
-        <li>- Extreem sterke aluminium profielen</li>
-        <li>- Wind en stof stoppen tochtstrips</li>
-      </ul>
-    </div>
-  `;
-});
-
-tintedGlass.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/glass-system-dark.jpg" alt="Donkere bril">
-    <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-        <p class="mb-20">Wil je buiten zitten terwijl <br>
-        wat privacy hebben? Onze getint glas systemen, <br>
-        Met de polycarbonaat zijwand, <br>
-        is de perfecte combinatie.</p>
-        <ul >
-        Glassystemen:
-          <li>- 10 mm gehard glas</li>
-          <li>- Extreem sterke aluminium profielen</li>
-          <li>- Wind en stof stoppen tochtstrips</li>
-          <li>- Getinte glazen panelen om privacy te behouden en zonlicht tegen te houden</li>
-        </ul>
-      </div>
-    `;
-});
-
-sideGlassSystem.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/glass-system-side.jpg" alt="Side Glass-systeem">
-    <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-        <p class="mb-20">Wilt u altijd perfect licht in uw veranda? <br>
-        Met de polycarbonaat zijwand, <br>
-        je zit beschut zonder daglicht te verliezen.</p>
-        <ul >
-        Glassystemen:
-          <li>- 10 mm gehard glas</li>
-          <li>- Extreem sterke aluminium profielen</li>
-          <li>- Wind en stof stoppen tochtstrips</li>
-        </ul>
-      </div>
-    `;
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+  document.body.style.overflowY = "visible";
 });

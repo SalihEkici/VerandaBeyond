@@ -60,64 +60,87 @@
     <!--====== HEADER PART START ======-->
 
     <header class="header-area">
+      <!--===== equipment detail modal ====-->
+      <div class="modal">
+        <div
+          id="modalBox"
+          class="col-12 d-flex flex-row flex-wrap justify-content-around"
+        ></div>
+        <div class="closeModal">+</div>
+      </div>
+
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo" alt="Logo" width="300px " />
-              </a>
-              <!-- Logo -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+              <div
+                class="col-12 d-flex flex-row flex-md-column justify-content-center align-items-center mx-auto"
               >
-                <span class="bar-icon"></span>
-                <span class="bar-icon"></span>
-                <span class="bar-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul id="nav" class="navbar-nav ml-auto">
-                  <li style="color: white">
-                    <a href="index.html/#contact" class="main-btn"
-                      >Get a free quote</a
-                    >
-                  </li>
-                  <li class="nav-item active">
-                    <a data-scroll-nav="0" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a data-scroll-nav="0" href="#product">Products</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a data-scroll-nav="0" href="#service">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a data-scroll-nav="0" href="#showcase">Showcase</a>
-                  </li>
-                  <li class="nav-item">
-                    <a data-scroll-nav="0" href="#contact">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <div>
-                      <a data-scroll-nav="0" href="nl.html"
-                        ><img src="assets/images/flags/nlflag.png" alt="dutch"
-                      /></a>
-                      |
-                      <a data-scroll-nav="0" href="index.html"
-                        ><img
-                          src="assets/images/flags/gbflag.png"
-                          alt="english"
-                      /></a>
-                    </div>
-                  </li>
-                </ul>
+                <div
+                  class="col-12 d-flex flex-row justify-content-between align-items-center"
+                >
+                  <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo" alt="Logo" width="300px" />
+                  </a>
+                  <a href="#contact" class="main-btn" style="width: 300px"
+                    >Get a free quote</a
+                  >
+                </div>
+                <!-- Logo -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="bar-icon"></span>
+                  <span class="bar-icon"></span>
+                  <span class="bar-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul
+                    id="nav"
+                    class="navbar-nav d-flex justify-content-center align-items-center"
+                    style="
+                      border-top: solid 1px rgba(0, 0, 0, 0.1);
+                      border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+                    "
+                  >
+                    <li class="nav-item active">
+                      <a data-scroll-nav="0" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a data-scroll-nav="0" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a data-scroll-nav="0" href="#showcase">Our Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a data-scroll-nav="0" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <div>
+                        <a data-scroll-nav="0" href="nl.html"
+                          ><img
+                            src="assets/images/flags/nlflag.png"
+                            alt="dutch"
+                        /></a>
+                        |
+                        <a data-scroll-nav="0" href="index.html"
+                          ><img
+                            src="assets/images/flags/gbflag.png"
+                            alt="english"
+                        /></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
                 <!-- navbar nav -->
               </div>
             </nav>
@@ -131,438 +154,226 @@
 
     <!--====== HEADER PART ENDS ======-->
 
-    <!--====== SLIDER PART START ======-->
-
-    <section id="home" class="slider-area pt-100 mt-50">
-      <div class="container-fluid position-relative">
-        <div class="slider-active">
-          <div class="single-slider">
-            <div class="slider-bg">
-              <div class="row no-gutters align-items-center">
-                <div class="col-lg-4 col-md-5">
-                  <div class="slider-product-image d-none d-md-block">
-                    <img src="assets/images/slider/1.jpg" alt="Slider" />
-                  </div>
-                  <!-- slider product image -->
-                </div>
-                <div class="col-lg-8 col-md-7">
-                  <div class="slider-product-content">
-                    <h1
-                      class="slider-title mb-10"
-                      data-animation="fadeInUp"
-                      data-delay="0.3s"
-                    >
-                      <span>Veranda</span> and <span>Carport</span>
-                    </h1>
-                    <p
-                      class="mb-25"
-                      data-animation="fadeInUp"
-                      data-delay="0.9s"
-                    >
-                      If you wish to sit in a car which hasn't been under the
-                      sun or sit outside under the rain without getting wet,
-                      welcome to the right place!
-                      <strong>Check out our products!</strong>
-                    </p>
-                    <a
-                      class="main-btn"
-                      href="#product"
-                      data-animation="fadeInUp"
-                      data-delay="1.5s"
-                      >Explore Products <i class="lni-chevron-right"></i
-                    ></a>
-                  </div>
-                  <!-- slider product content -->
-                </div>
-              </div>
-              <!-- row -->
-            </div>
-            <!-- container -->
-          </div>
-          <!-- single slider -->
-
-          <div class="single-slider">
-            <div class="slider-bg">
-              <div class="row no-gutters align-items-center">
-                <div class="col-lg-4 col-md-5">
-                  <div class="slider-product-image d-none d-md-block">
-                    <img src="assets/images/slider/3.jpg" alt="Slider" />
-                  </div>
-                  <!-- slider product image -->
-                </div>
-                <div class="col-lg-8 col-md-7">
-                  <div class="slider-product-content">
-                    <h1
-                      class="slider-title mb-10"
-                      data-animation="fadeInUp"
-                      data-delay="0.3s"
-                    >
-                      <span>We</span> are here to <span> serve</span>
-                    </h1>
-                    <p
-                      class="mb-25"
-                      data-animation="fadeInUp"
-                      data-delay="0.9s"
-                    >
-                      Ask a question or ask for a free quotation. <br />
-                      We will reply to you as soon as possible with the
-                      requested information!
-                    </p>
-                    <a
-                      class="main-btn"
-                      href="#service"
-                      data-animation="fadeInUp"
-                      data-delay="1.5s"
-                      >See Our Services<i class="lni-chevron-right"></i
-                    ></a>
-                  </div>
-                  <!-- slider product content -->
-                </div>
-              </div>
-              <!-- row -->
-            </div>
-            <!-- container -->
-          </div>
-          <!-- single slider -->
-
-          <div class="single-slider">
-            <div class="slider-bg">
-              <div class="row no-gutters align-items-center">
-                <div class="col-lg-4 col-md-5">
-                  <div class="slider-product-image d-none d-md-block">
-                    <img src="assets/images/slider/2.jpg" alt="Slider" />
-                  </div>
-                  <!-- slider product image -->
-                </div>
-                <div class="col-lg-8 col-md-7">
-                  <div class="slider-product-content">
-                    <h1
-                      class="slider-title mb-10"
-                      data-animation="fadeInUp"
-                      data-delay="0.3s"
-                    >
-                      <span>Get</span> a Free <span>Quote</span>
-                    </h1>
-                    <p
-                      class="mb-25"
-                      data-animation="fadeInUp"
-                      data-delay="0.9s"
-                    >
-                      After customizing your very own product, fill in the
-                      required information in the contact form below to receive
-                      a <strong>free quotation!</strong>
-                    </p>
-                    <p>
-                      <a
-                        class="main-btn"
-                        href="#contact"
-                        data-animation="fadeInUp"
-                        data-delay="1.5s"
-                        >Contact Us <i class="lni-chevron-right"></i
-                      ></a>
-                    </p>
-                  </div>
-
-                  <!-- slider product content -->
-                </div>
-              </div>
-              <!-- row -->
-            </div>
-            <!-- container -->
-          </div>
-          <!-- single slider -->
-        </div>
-        <!-- slider active -->
-        <div class="slider-social">
-          <div class="row justify-content-end">
-            <div class="col-lg-7 col-md-6">
-              <ul class="social text-right">
-                <li>
-                  <a target="_blank" href="https://www.facebook.com"
-                    ><i class="lni-facebook-filled"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.twitter.com"
-                    ><i class="lni-twitter-original"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.instagram.com"
-                    ><i class="lni-instagram"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <!--PICTURE PART STARTS-->
+    <section class="col-m-10 d-flex mx-auto flex-column flex-md-row mt-190">
+      <div class="w-100">
+        <img
+          style="width: 100%; border: 5px solid white; border-radius: 20px"
+          src="assets/images/showcase/fullSystem.jpg"
+          alt=""
+        />
       </div>
-      <!-- container fluid -->
+      <div class="d-none d-md-flex flex-column w-50">
+        <img
+          style="width: 100%; border: 5px solid white; border-radius: 20px"
+          src="assets/images/showcase/glassSystem.jpg"
+          alt=""
+        />
+        <img
+          style="width: 100%; border: 5px solid white; border-radius: 20px"
+          src="assets/images/showcase/carport.jpg"
+          alt=""
+        />
+      </div>
     </section>
+    <!--PICTURE PART ENDS-->
 
-    <!--====== SLIDER PART ENDS ======-->
+    <!--====== CONTACT PART START ======-->
 
-    <!--====== PRODUCT PART START ======-->
-
-    <section id="product" class="product-area pt-100 pb-130">
+    <section
+      id="contact"
+      style="background-color: #fffaf6"
+      class="contact-area pt-115"
+    >
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-4">
-            <div class="collection-menu text-center mt-30">
-              <h4 class="collection-tilte">OUR PRODUCTS</h4>
-              <div
-                class="nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <a
-                  class="active"
-                  id="v-pills-veranda-tab"
-                  data-toggle="pill"
-                  href="#v-pills-veranda"
-                  role="tab"
-                  aria-controls="v-pills-veranda"
-                  aria-selected="true"
-                  >Veranda</a
-                >
-
-                <a
-                  id="v-pills-carport-tab"
-                  data-toggle="pill"
-                  href="#v-pills-carport"
-                  role="tab"
-                  aria-controls="v-pills-carport"
-                  aria-selected="false"
-                  >Carport</a
-                >
-
-                <a
-                  id="v-pills-glass-tab"
-                  data-toggle="pill"
-                  href="#v-pills-glass"
-                  role="tab"
-                  aria-controls="v-pills-glass"
-                  aria-selected="false"
-                  >Glass Systems</a
-                >
-              </div>
-              <!-- nav -->
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="contact-title text-center">
+              <h2 class="title">Choose a Product to Get a Free Quote</h2>
             </div>
-            <!-- collection menu -->
-          </div>
-          <div class="col-lg-9 col-md-8">
-            <div class="tab-content" id="v-pills-tabContent">
-              <div
-                class="tab-pane fade show active"
-                id="v-pills-veranda"
-                role="tabpanel"
-                aria-labelledby="v-pills-veranda-tab"
-              >
-                <div class="product-items mt-30">
-                  <div class="row product-items-active">
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="verandaPolyTop"
-                            src="assets/images/product/poly-roof.jpg"
-                            alt="polycarbonate roof"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Polycarbonate top</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="verandaGlassTop"
-                            src="assets/images/product/glass-roof.jpg"
-                            alt="glass roof"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Glass Top</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="verandaAluminumSideWall"
-                            src="assets/images/product/sidewall.jpg"
-                            alt="aluminum side wall"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Aluminum Side Wall</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="verandaPolySideWall"
-                            src="assets/images/product/poly-sidewall.jpg"
-                            alt="polycarbonate side wall"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Polycarbonate Side Wall</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                  </div>
-                  <!-- row -->
-                </div>
-                <!-- product items -->
-              </div>
-              <!-- tab pane -->
-
-              <div
-                class="tab-pane fade"
-                id="v-pills-carport"
-                role="tabpanel"
-                aria-labelledby="v-pills-carport-tab"
-              >
-                <div class="product-items mt-30">
-                  <div class="row product-items-active">
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="carportPolyTop"
-                            src="assets/images/product/carport-poly-roof.jpg"
-                            alt="Polycarbonate Top Carport"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Polycarbonate Top</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="carportGlassTop"
-                            src="assets/images/product/glass-roof.jpg"
-                            alt="Glass Top Carport"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Glass Top</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="carportWall"
-                            src="assets/images/product/carport-wall.jpg"
-                            alt="Carport wall"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Aluminum Wall</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                  </div>
-                  <!-- row -->
-                </div>
-                <!-- product items -->
-              </div>
-              <!-- tab pane -->
-
-              <div
-                class="tab-pane fade"
-                id="v-pills-glass"
-                role="tabpanel"
-                aria-labelledby="v-pills-glass-tab"
-              >
-                <div class="product-items mt-30">
-                  <div class="row product-items-active">
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="glassSystemPhoto"
-                            src="assets/images/product/glass-system.jpg"
-                            alt="Glass System"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Sliding Glass System</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="sideGlassSystem"
-                            src="assets/images/product/glass-system-side.jpg"
-                            alt="Side Glass System"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Side Glass System</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                    <div class="col-md-4">
-                      <div class="single-product-items">
-                        <div class="product-item-image">
-                          <img
-                            id="tintedGlass"
-                            src="assets/images/product/glass-system-dark.jpg"
-                            alt="Dark Glasses"
-                          />
-                        </div>
-                        <div class="product-item-content text-center mt-30">
-                          <h5 class="product-title">Tinted Glasses</h5>
-                        </div>
-                      </div>
-                      <!-- single product items -->
-                    </div>
-                  </div>
-                  <!-- row -->
-                </div>
-                <!-- product items -->
-              </div>
-              <!-- tab pane -->
-            </div>
-            <!-- tab content -->
+            <!-- contact title -->
           </div>
         </div>
         <!-- row -->
-        <div
-          id="big-image"
-          class="mt-20 mx-auto d-flex flex-row flex-wrap justify-content-between"
-        ></div>
+
+        <div class="col-lg-12">
+          <div>
+            <div
+              class="col-12 d-flex flex-column flex-md-row justify-content-around flex-wrap p-5"
+              style="border-top: solid 1px orange"
+            >
+              <div class="card col-12 col-lg-3 m-2 p-0 text-center">
+                <img
+                  class="card-img-top"
+                  id="veranda"
+                  src="assets/images/showcase/fullSystem.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-title m-3">
+                  <h5 style="border-bottom: 1px solid orange">Veranda</h5>
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <a
+                    href="assets/englishForms/verandaForm.html"
+                    class="main-btn mb-10"
+                  >
+                    Get a quote
+                  </a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3 m-2 p-0">
+                <img
+                  class="card-img-top"
+                  id="carport"
+                  src="assets/images/showcase/carport.jpg"
+                  alt="Card image cap"
+                />
+                <div
+                  class="card-title text-center m-3"
+                  style="border-bottom: 1px solid orange"
+                >
+                  <h5>Carport</h5>
+                </div>
+
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <a
+                    href="assets/englishForms/carportForm.html"
+                    class="main-btn mb-10"
+                  >
+                    Get a quote
+                  </a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3 m-2 p-0">
+                <img
+                  id="slidingGlassDoors"
+                  class="card-img-top"
+                  src="assets/images/services/services.jpg"
+                  alt="Card image cap"
+                />
+                <div
+                  class="card-title text-center m-3"
+                  style="border-bottom: 1px solid orange"
+                >
+                  <h5>Sliding Glass Doors</h5>
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <a
+                    href="assets/englishForms/glassSystemForm.html"
+                    class="main-btn mb-10"
+                  >
+                    Get a quote
+                  </a>
+                </div>
+              </div>
+              <div class="card col-12 col-lg-3 m-2 p-0">
+                <img
+                  id="awnings"
+                  class="card-img-top"
+                  src="assets/images/showcase/fullSystem.jpg"
+                  alt="Card image cap"
+                />
+                <div
+                  class="card-title text-center m-3"
+                  style="border-bottom: 1px solid orange"
+                >
+                  <h5>Awnings</h5>
+                </div>
+                <div
+                  class="card-body d-flex flex-column justify-content-center align-items-center"
+                >
+                  <a
+                    href="assets/englishForms/question.html"
+                    class="main-btn mb-10"
+                  >
+                    Get a quote
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p class="text-center">
+              <small
+                >Click on one of the systems to receive a free quote!</small
+              >
+            </p>
+            <!-- row -->
+          </div>
+
+          <!-- row -->
+        </div>
+        <!-- contact box -->
       </div>
       <!-- container -->
     </section>
 
-    <!--====== PRODUCT PART ENDS ======-->
+    <!--====== CONTACT PART ENDS ======-->
+    <!--====== SHOWCASE PART START ======-->
 
+    <section id="showcase" class="showcase-area pt-50 pb-50">
+      <div class="container">
+        <div class="flex-column">
+          <div class="col-lg-4">
+            <div class="showcase-title pt-25">
+              <h2 class="title">Our Projects</h2>
+            </div>
+            <!-- showcase title -->
+          </div>
+          <div class="col-lg-6">
+            <div class="showcase-title pt-25">
+              <p>Here are some projects which our team has made!</p>
+            </div>
+            <!-- showcase title -->
+          </div>
+        </div>
+        <!-- row -->
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <div class="showcase-active mt-3">
+              <div class="single-showcase d-flex flex-row">
+                <img
+                  src="assets/images/showcase/fullSystem.jpg"
+                  alt="Showcase"
+                />
+                <button
+                  class="main-btn system-button"
+                  style="height: 50px; margin-bottom: 15px"
+                >
+                  <p style="color: white">Veranda</p>
+                </button>
+              </div>
+              <!-- single showcase -->
+              <div class="single-showcase">
+                <img src="assets/images/showcase/carport.jpg" alt="Showcase" />
+                <button class="main-btn system-button">Carport</button>
+              </div>
+              <!-- single showcase -->
+              <div class="single-showcase">
+                <img
+                  src="assets/images/showcase/glassSystem.jpg"
+                  alt="Showcase"
+                />
+                <button class="main-btn system-button">Glass system</button>
+              </div>
+              <!-- single showcase -->
+            </div>
+            <!-- showcase active -->
+          </div>
+        </div>
+        <p class="text-center d-md-none">
+          <small>slide to go to next picture</small>
+        </p>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== SHOWCASE PART ENDS ======-->
     <!--====== SERVICES PART START ======-->
 
     <section id="service" class="services-area pt-125 pb-130">
@@ -572,7 +383,7 @@
             <div class="section-title pb-30">
               <h5 class="mb-15">Our Services</h5>
               <h3 class="title mb-15">
-                Receive the best service via Veranda Plus!
+                Receive the best service via Veranda &amp; Beyond
               </h3>
               <p>
                 May it be a quotation, taking measurements, installation or a
@@ -672,60 +483,6 @@
 
     <!--====== SERVICES PART ENDS ======-->
 
-    <!--====== SHOWCASE PART START ======-->
-
-    <section id="showcase" class="showcase-area pt-100 pb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="showcase-title pt-25">
-              <h2 class="title">Showcase</h2>
-            </div>
-            <!-- showcase title -->
-          </div>
-          <div class="col-lg-6">
-            <div class="showcase-title pt-25">
-              <p>Here are some projects which our team has made!</p>
-            </div>
-            <!-- showcase title -->
-          </div>
-        </div>
-        <!-- row -->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="showcase-active mt-65 mb-65">
-              <div class="single-showcase d-flex flex-row">
-                <img
-                  src="assets/images/showcase/fullSystem.jpg"
-                  alt="Showcase"
-                />
-                <button class="main-btn system-button">Veranda</button>
-              </div>
-              <!-- single showcase -->
-              <div class="single-showcase">
-                <img src="assets/images/showcase/carport.jpg" alt="Showcase" />
-                <button class="main-btn system-button">Carport</button>
-              </div>
-              <!-- single showcase -->
-              <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/glassSystem.jpg"
-                  alt="Showcase"
-                />
-                <button class="main-btn system-button">Glass system</button>
-              </div>
-              <!-- single showcase -->
-            </div>
-            <!-- showcase active -->
-          </div>
-        </div>
-        <!-- row -->
-      </div>
-      <!-- container -->
-    </section>
-
-    <!--====== SHOWCASE PART ENDS ======-->
-
     <!--====== TESTIMONIAL PART START ======-->
 
     <section id="testimonial" class="testimonial-area pt-200">
@@ -770,88 +527,6 @@
     </section>
 
     <!--====== TESTIMONIAL PART ENDS ======-->
-
-    <!--====== CONTACT PART START ======-->
-
-    <section id="contact" class="contact-area pt-115">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <div class="contact-title text-center">
-              <h2 class="title">Get In Touch</h2>
-            </div>
-            <!-- contact title -->
-          </div>
-        </div>
-        <!-- row -->
-        <div class="contact-box mt-70">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="contact-info pt-25">
-                <h4 class="info-title">Contact Info</h4>
-                <ul>
-                  <li>
-                    <div class="single-info mt-30">
-                      <div class="info-icon">
-                        <i class="lni-envelope"></i>
-                      </div>
-                      <div class="info-content">
-                        <p>fakemail@fakemail</p>
-                      </div>
-                    </div>
-                    <!-- single info -->
-                  </li>
-                </ul>
-              </div>
-              <!-- contact info -->
-            </div>
-            <div class="col-lg-12">
-              <div>
-                <div
-                  class="d-flex flex-column flex-md-row flex-wrap justify-content-around p-5 my-auto"
-                >
-                  <a
-                    href="assets/englishForms/verandaForm.html"
-                    class="main-btn mb-10"
-                  >
-                    Veranda
-                  </a>
-                  <a
-                    href="assets/englishForms/carportForm.html"
-                    class="main-btn mb-10"
-                  >
-                    Carport
-                  </a>
-                  <a
-                    href="assets/englishForms/glassSystemForm.html"
-                    class="main-btn mb-10"
-                  >
-                    Glass System
-                  </a>
-                  <a
-                    href="assets/englishForms/question.html"
-                    class="main-btn mb-10"
-                  >
-                    Ask a Question
-                  </a>
-                </div>
-                <p class="text-center">
-                  <small
-                    >Click on one of the systems to receive a free quote!</small
-                  >
-                </p>
-              </div>
-              <!-- row -->
-            </div>
-          </div>
-          <!-- row -->
-        </div>
-        <!-- contact box -->
-      </div>
-      <!-- container -->
-    </section>
-
-    <!--====== CONTACT PART ENDS ======-->
 
     <!--====== FOOTER PART START ======-->
 

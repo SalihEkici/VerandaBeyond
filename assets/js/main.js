@@ -245,223 +245,229 @@ $(function () {
 });
 
 //===== Product info
-const info = document.getElementById("big-image");
+const modal = document.querySelector(".modal");
+const nodeListImages = document.querySelectorAll(".card-img-top");
+const arrayImages = Array.from(nodeListImages);
+const closeModal = document.querySelector(".closeModal");
+const details = document.getElementById("modalBox");
+const productImageContainer = document.getElementById("equipmentImage");
 
-//veranda buttons
-const verandaGlassTop = document.getElementById("verandaGlassTop");
-const verandaPolyTop = document.getElementById("verandaPolyTop");
-const verandaAluminumSideWall = document.getElementById(
-  "verandaAluminumSideWall"
-);
-const verandaPolySideWall = document.getElementById("verandaPolySideWall");
+nodeListImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    modal.style.display = "block";
+    if (image.id == "veranda") {
+      details.innerHTML = `
+                              <div class="card col-10 col-lg-5 p-0 mt-30">
+                                <img 
+                                src="assets/images/services/services.jpg"
+                                alt="Card image cap"
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Polycarbonate Roof Veranda</h5>
+                                  <div class="card-text">
+                                    <p >Polycarbonate sheet is a very good product to create a high-quality roof finish for your porch. It is also possible to make a wedge.</p>
+                                    <ul class="p-3">
 
-//===== carport buttons
-const carportPolyTop = document.getElementById("carportPolyTop");
-const carportGlassTop = document.getElementById("carportGlassTop");
-const carportWall = document.getElementById("carportWall");
+                                    <li>Available in 3 colors (Antraciet, black and cream)</li>
+                                  
+                                    <li>Roofing polycarbonate clear or opaque</li>
+                                  
+                                    <li>Round or straight model gutters</li>
+                                  
+                                    <li>Lighting LED spotlight set</li>
+                                    
+                                  
+                                    <li>10-year warranty on profile and color accuracy</li>
+                                    </ul>
+                                  </div>
+                                  <a
+                                  href="assets/englishForms/verandaForm.html"
+                                  class="main-btn mb-10 mt-50"
+                                  >
+                                    Get a quote
+                                  </a>
+                                </div>
+                              </div>
+                              
+                              <div class="card col-10 col-lg-5 p-0 mt-30">
+                                <img 
+                                src="assets/images/services/services.jpg"
+                                alt="Card image cap"
+                                />
+                                  <div class="card-body">
+                                    <h5 class="card-title">Glass Roof Veranda</h5>
+                                    <div class="card-text">
+                                      <p >Do you always want perfect light? And also be able to enjoy the starry sky and clouds drifting by? Then a glass veranda is the best choice for you.</p>
+                                      <ul class="p-3">
+                                      <li>Available in 3 colors (Antraciet, black and cream)</li>
+                                      <li> Roof covering 44.2 laminated safety glass</li>
+                                      <li> Lengths possible up to 400cm</li>
+                                      <li>Round or straight model gutters</li>
+                                      <li>U-profiles, with draught strips</li>
+                                      <li>Lighting LED spotlight set</li>
+                                      <li>10-year warranty on profile and color accuracy</li>
+                                      </ul>
+                                    </div>
+                                  
+                                <a
+                                  href="assets/englishForms/verandaForm.html"
+                                  class="main-btn mb-10"
+                                >
+                                  Get a quote
+                                </a>
+                                </div>
+                            </div>
+                          
+      `;
+    } else if (image.id == "carport") {
+      details.innerHTML = `
+                              <div class="card col-10 col-lg-5 p-0 mt-30">
+                                <img 
+                                src="assets/images/services/services.jpg"
+                                alt="Card image cap"
+                                />
+                                  <div class="card-body">
+                                    <h5 class="card-title">Polycarbonate Roof Carport</h5>
+                                    <div class="card-text">
+                                      <p>
+                                      An aluminum car cover with a polycarbonate roof that has a very long lifespan, 
+                                      provides the best protection for you car and also requires little maintenance. 
+                                      In addition, an aluminum cover from Veranda &amp; Beyond also offers a beautiful appearance.
+                                      </p>
+                                      <ul class="p-3">
 
-//===== glass system buttons
-const tintedGlass = document.getElementById("tintedGlass");
-const sideGlassSystem = document.getElementById("sideGlassSystem");
-const glassSystemPhoto = document.getElementById("glassSystemPhoto");
+                                      <li> Available in 3 colors (Antraciet, black and cream)</li>
+                                    
+                                      <li> Roofing polycarbonate clear or opaque</li>
+                                    
+                                      <li> Round or straight model gutters</li>
+                                    
+                                      <li> Lighting LED spotlight set</li>
+                                      
+                                      <li> 10-year warranty on profile and color accuracy</li>
+                                      </ul>
+                                    </div>
+                                    <a
+                                    href="assets/englishForms/verandaForm.html"
+                                    class="main-btn mb-10 mt-50"
+                                    >
+                                      Get a quote
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
 
-//===== veranda info
-verandaGlassTop.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/glass-roof.jpg" alt="glass roof">
-    <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto">
-      <p class="mx-auto mb-20 text-center">
-        Do you always want a perfect incidence of light? <br>
-        And can you also enjoy the starry sky and passing clouds? <br>
-        Then a glass veranda is the best choice for you.
-      </p>
-      <ul class="mt-20 mb-auto mt-auto text-center">
-        Veranda Glass Top:
-          <li>- 10 year Guarantee</li>
-          <li>- Spot LEDs can be added</li>
-          <li>- Three color options (Antraciet, Black, Cream)</li>
-          <li>- Laminated glass</li>
-          <li>- Maximum 400 cm in length</li>
-          <li>- A round or classic decorative gutter as standard</li>
-      </ul>
-    </div>
-    `;
+                              <div class="card col-10 col-lg-5 p-0 mt-30">
+                                <img 
+                                src="assets/images/services/services.jpg"
+                                alt="Card image cap"
+                                />
+                                  <div class="card-body">
+                                  <h5 class="card-title">Glass Roof Carport</h5>
+                                  <div class="card-text">
+                                    <p >Would you prefer a glass carport? That is also possible at Valk &amp; Beyond.</p>
+                                    <ul class="p-3">
+
+                                    <li>Available in 3 colors (Antraciet, black and cream)</li>
+
+                                    <li> Roof covering 44.2 laminated safety glass</li>
+
+                                    <li> Lengths possible up to 400cm</li>
+                                  
+                                    <li> Round or straight model gutters</li>
+
+                                    <li> U-profiles, with draught strips</li>
+                                    
+                                    <li> Lighting LED spotlight set</li>
+                                    
+                                  
+                                    <li>10-year warranty on profile and color accuracy</li>
+                                    </ul>
+                                  </div>
+                                  <a
+                                        href="assets/englishForms/verandaForm.html"
+                                        class="main-btn mb-10"
+                                      >
+                                        Get a quote
+                                      </a>
+                                  </div>
+                                </div>
+                          
+      `;
+    } else if (image.id == "slidingGlassDoors") {
+      details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
+                            <img 
+                            src="assets/images/services/services.jpg"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                            <h5 class="card-title">Sliding Glass Doors</h5>
+                            <div class="card-text">
+                              <p >The hard glass panels run on wheels with bearings and are equipped with carriers that automatically pull the panels along when closing. The glass panels run on a narrow bottom profile, which consists of up to 6 tracks, depending on the number of panels required. You can choose a wall that closes on the left, right or in the middle.
+                              According to the dimensions of the glass panels, they are supplied in 10 mm ESG safety glass.
+                              
+                              The aluminum profiles are powder coated. You have a choice of two standard colors: cream-white and anthracite.</p>
+                              <ul class="p-3">
+
+                              <li> Extremely compact and strong aluminum profile</li>
+
+                              <li> Uninsulated</li>
+
+                              <li> With colored draught strip and fasteners</li>
+                            
+                              <li> 10 mm tempered safety glass</li>
+
+                              <li> Rain and wind proof</li>
+                              
+                              <li> Aluminium strong bottom rail, 2 cm high</li>
+                              
+                            
+                              <li>10-year warranty on profile and color accuracy</li>
+                              </ul>
+                            </div>
+                              <a
+                                    href="assets/englishForms/verandaForm.html"
+                                    class="main-btn mb-10"
+                                  >
+                                    Get a quote
+                                  </a>
+                              </div>
+                            </div>`;
+    } else if (image.id == "awnings") {
+      details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
+                            <img 
+                            src="assets/images/services/services.jpg"
+                            alt="Card image cap"
+                            />
+                            <div class="card-body">
+                            <h5 class="card-title">Awnings</h5>
+                            <div class="card-text">
+                              <p >We only work with materials of the best quality. Vernda &amp; Beyond supplies awnings that you can enjoy for many years. We guarantee excellent service and a high degree of customer friendliness. Only when you are satisfied, we are satisfied. Applied above the glass, the fabric is equipped with a protective finish.
+
+                              The awning fabric is available in both antraciet and cream.</p>
+                              <ul class="p-3">
+                                <li> Top quality</li>
+                                <li> Very high quality fabric</li>
+                                <li> Free of charge customization</li>
+                                <li> Motor: Somfy LTS with remote control</li>
+                                <li> Only available for mounting above the canopy</li>
+                                <li> Water repellent</li>
+                              </ul>
+                            </div>
+                              <a
+                                    href="assets/englishForms/verandaForm.html"
+                                    class="main-btn mb-10"
+                                  >
+                                    Get a quote
+                                  </a>
+                              </div>
+                            </div>`;
+    }
+
+    document.body.style.overflowY = "hidden";
+  });
 });
-
-verandaPolyTop.addEventListener("click", () => {
-  info.innerHTML = `
-  <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/poly-roof.jpg" alt="polycarbonate roof">
-  <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto">
-    <p class="mb-20 text-center">
-        Polycarbonate sheet is a very good product <br>
-        to achieve a high-quality roof finish for your veranda. <br>
-        It is also possible to make a wedge or a side wall <br>
-        of your awning from these polycarbonate sheets.
-    </p>
-    <ul class="mt-20 mb-auto mt-auto text-center">
-    Veranda Polycarbonate Top:
-      <li>- 10 year Guarantee</li>
-      <li>- Spot LEDs can be added</li>
-      <li>- Three color options (Antraciet, Black, Creame)</li>
-      <li>- A round or classic decorative gutter as standard</li>
-      <li>- Clear or opaque options for sunlight</li>
-    </ul>
-  </div>
-    `;
-});
-
-verandaAluminumSideWall.addEventListener("click", () => {
-  info.innerHTML = `
-  <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/sidewall.jpg" alt="aluminum side wall">
-  <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-  <p class="mb-20">
-  You can choose to close the walls of your veranda. <br> 
-  View the many possibilities with us. <br>
-  The aluminum walls are maintenance-free <br>
-  and available in various colours.
-  </p>
-  <ul>
-  Veranda Aluminum Side Wall:
-    <li>- Durable and maintenance-friendly side walls for your veranda</li>
-    <li>- Powder-coated aluminum in 2 standard colors</li>
-    <li>- Can be combined with a wedge frame for more light</li>
-    <li>- Thickness panels 16 MM & Height panels 160 MM</li>
-    <li>-  Close a roof up to a height of 190cm</li>
-  </ul>
-  </div>
-  `;
-});
-
-verandaPolySideWall.addEventListener("click", () => {
-  info.innerHTML = `
-  <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/poly-sidewall.jpg" alt="polycarbonate side wall">
-  <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-    <p class="mb-20">Do you always want perfect light in your veranda? <br> 
-    With the polycarbonate side wall, <br> 
-    you are sheltered without losing daylight.</p>
-    <ul >
-    Veranda Polycarbonate Side Wall:
-      <li>- 16mm polycarbonate</li>
-      <li>- Choices of opaque(reduces sunlight by 80%) and clear</li>
-      <li>- Available in different sizes</li>
-    </ul>
-  </div>
-  `;
-});
-
-//===== carport info
-
-carportGlassTop.addEventListener("click", () => {
-  info.innerHTML = `
-  <img class="d-none d-md-block col-6 w-50 h-auto" id="carportGlassTop" src="assets/images/product/glass-roof.jpg" alt="Glass Top Carport">
-  <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-    <p class="mb-20">Would you rather have a glass carport? <br>
-     That is also possible at Veranda&Beyonde.</p>
-    <ul >
-    Carport Glass Top:
-      <li>- Two color options (Antraciet and Creame)</li>
-      <li>- Laminated glass</li>
-      <li>- Maximum 400 cm in length</li>
-      <li>- LEDs can be added</li>
-      <li>- Standard or round gutter options</li>
-    </ul>
-  </div>
-  `;
-});
-
-carportPolyTop.addEventListener("click", () => {
-  info.innerHTML = `
-  <img class="d-none d-md-block col-6 w-50 h-auto" id="carpotPolyTop" src="assets/images/product/carport-poly-roof.jpg" alt="Polycarbonate Top Carport">
-  <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-    <p class="mb-20">
-    An aluminum car cover is a beautiful <br>
-    covering with a very long lifespan, <br>
-     which also requires little maintenance. <br>
-      In addition, an aluminum cover <br>
-       from Veranda&Beyonde also <br>
-       offers a beautiful view.</p>
-    <ul>
-    Carport Polycarbonate Top:
-      <li>- Three color options (Antraciet, Black and Creame)</li>
-      <li>- Choices of opaque(reduces sunlight by 80%) and clear</li>
-      <li>- Maximum 400 cm in length</li>
-      <li>- LEDs can be added</li>
-      <li>- Standard or round gutter options</li>
-      <li>- 10 year guarantee for profiles and color of polycarbonate</li>
-    </ul>
-  </div>
-  `;
-});
-
-carportWall.addEventListener("click", () => {
-  info.innerHTML = `
-  <img class="d-none d-md-block col-6 w-50 h-auto" id="carportWall" src="assets/images/product/carport-wall.jpg" alt="Carport wall">
-  <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-    <p class="mb-20">Do you always want perfect light in your veranda? <br> 
-    With the polycarbonate side wall, <br> 
-    you are sheltered without losing daylight.</p>
-    <ul >
-    Carport Wall:
-      <li>- Three color options (Antraciet, Black and Creame)</li>
-      <li>- Choices of opaque(reduces sunlight by 80%) and clear</li>
-      <li>- Maximum 400 cm in length</li>
-      <li>- LEDs can be added</li>
-      <li>- Standard or round gutter options</li>
-      <li>- 10 year guarantee for profiles and color of polycarbonate</li>
-    </ul>
-  </div>
-  `;
-});
-
-glassSystemPhoto.addEventListener("click", () => {
-  info.innerHTML = `
-    <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/glass-system.jpg" alt="Glass System">
-    <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-      <p class="mb-20">Do you always want perfect light in your veranda? <br> 
-      With the polycarbonate side wall, <br> 
-      you are sheltered without losing daylight.</p>
-      <ul >
-      Glass Systems:
-        <li>- 10mm tempered glass</li>
-        <li>- Extremely strong aluminum profiles</li>
-        <li>- Wind and dust stopping draft strips</li>
-      </ul>
-    </div>
-  `;
-});
-
-tintedGlass.addEventListener("click", () => {
-  info.innerHTML = `
-  <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/glass-system-dark.jpg" alt="Dark Glasses">
-  <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-      <p class="mb-20">Do you want to sit outside while still <br>
-      having some privacy? Our tinted glass systems, <br> 
-      With the polycarbonate side wall, <br> 
-      is the perfect combination.</p>
-      <ul >
-      Glass Systems:
-        <li>- 10mm tempered glass</li>
-        <li>- Extremely strong aluminum profiles</li>
-        <li>- Wind and dust stopping draft strips</li>
-        <li>- Tinted glass panels to keep privacy and stop sunlight</li>
-      </ul>
-    </div>
-  `;
-});
-
-sideGlassSystem.addEventListener("click", () => {
-  info.innerHTML = `
-  <img class="d-none d-md-block col-6 w-50 h-auto" src="assets/images/product/glass-system-side.jpg" alt="Side Glass System">
-  <div class="col-md-6 d-flex flex-column mt-20 mb-auto mt-auto text-center">
-      <p class="mb-20">Do you always want perfect light in your veranda? <br> 
-      With the polycarbonate side wall, <br> 
-      you are sheltered without losing daylight.</p>
-      <ul >
-      Glass Systems:
-        <li>- 10mm tempered glass</li>
-        <li>- Extremely strong aluminum profiles</li>
-        <li>- Wind and dust stopping draft strips</li>
-      </ul>
-    </div>
-  `;
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+  document.body.style.overflowY = "visible";
 });
