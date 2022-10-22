@@ -69,7 +69,7 @@
                 <img
                   src="../../assets/images/logo.png"
                   alt="Logo"
-                  width="200"
+                  width="250"
                 />
               </a>
               <!-- Logo -->
@@ -84,7 +84,7 @@
 
     <!--====== HEADER PART ENDS ======-->
     <div class="container pt-150">
-      <div class="col-lg-12">
+      <div class="col-12 col-lg-12">
         <div class="contact-form">
           <form
             id="contact-form"
@@ -94,38 +94,50 @@
           >
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingDimensions">
+                <h2 class="accordion-header" id="headingZonweringenAfmetingen">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
-                    data-bs-target="#collapseDimensions"
-                    aria-expanded="false"
-                    aria-controls="collapseDimensions"
+                    data-bs-target="#collapseZonweringenAfmetingen"
+                    aria-expanded="true"
+                    aria-controls="collapseZonweringenAfmetingen"
                   >
-                    Afmetingen carport
+                    Zonweringen Afmetingens
                   </button>
                 </h2>
                 <div
-                  id="collapseDimensions"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingDimensions"
+                  id="collapseZonweringenAfmetingen"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingZonweringenAfmetingen"
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <p>
-                      <label for="width">Breedte:</label>
-                      <input type="text" name="width" required class="w-100" />
-                    </p>
-                    <p>
-                      <label for="depth">Diepte:</label>
-                      <input type="text" name="Depth" required class="w-100" />
-                    </p>
+                    <div class="accordion-body collapsed d-flex flex-column">
+                      <p>
+                        <label for="Length">Lengte:</label>
+                        <input
+                          type="text"
+                          name="Length"
+                          placeholder="250cm"
+                          class="w-100"
+                        />
+                      </p>
+                      <p>
+                        <label for="width">Breedte:</label>
+                        <input
+                          type="text"
+                          name="width"
+                          placeholder="250cm"
+                          class="w-100"
+                        />
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingColor">
+                <h2 class="accordion-header" id="headingKleur">
                   <button
                     class="accordion-button collapsed"
                     type="button"
@@ -134,178 +146,20 @@
                     aria-expanded="false"
                     aria-controls="collapseColor"
                   >
-                    Carport Kleur
+                    Zonweringen Kleur
                   </button>
                 </h2>
                 <div
-                  id="collapseColor"
+                  id="collapseKleur"
                   class="accordion-collapse collapse"
-                  aria-labelledby="headingColor"
+                  aria-labelledby="headingKleur"
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body text-center">
-                    <select name="color" id="color" class="w-50" required>
-                      <option value="black">Zwart (RAL9005)</option>
+                    <select name="Kleur" id="Kleur" class="w-50" required>
+                      <option value="Black">Zwart (RAL9005)</option>
                       <option value="antraciet">Antraciet (RAL7016)</option>
-                      <option value="cream">Crème (RAL9001)</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTop">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTop"
-                    aria-expanded="false"
-                    aria-controls="collapseTop"
-                  >
-                    Carport Dak
-                  </button>
-                </h2>
-                <div
-                  id="collapseTop"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTop"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body text-center">
-                    <select name="top" class="w-50" required>
-                      <option value="Polycarbonate opaque">
-                        Polycarbonaat opaal
-                      </option>
-                      <option value="Polycarbonate clear">
-                        Polycarbonaat helder
-                      </option>
-                      <option value="Glass clear">
-                        Helder glas (Max 400cm)
-                      </option>
-                      <option value="Glass opaque">
-                        Helder opaal (Max 400cm)
-                      </option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingRight">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseRight"
-                    aria-expanded="false"
-                    aria-controls="collapseRight"
-                  >
-                    Carport Rechter Zijwand
-                  </button>
-                </h2>
-                <div
-                  id="collapseRight"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingRight"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body text-center">
-                    <select name="Right wall" class="w-75" required>
-                      <option value="open">None</option>
-                      <option value="Wedge">Spie</option>
-                      <option value="Polycarbonate side wall">
-                        Polycarbonaat zijwand
-                      </option>
-                      <option value="Fixed frame with window">
-                        Vast frame met raam
-                      </option>
-                      <option value="Sliding glass windows">
-                        Glazen schuiframen
-                      </option>
-                      <option value="Aluminum wall with wedge">
-                        Aluminium zijwand met spie
-                      </option>
-                      <option
-                        value="Sliding glass windows with polycarbonate wedge"
-                      >
-                        Glazen schuiframen met polycarbonaat spie
-                      </option>
-                      <option value="Sliding glass windows with glass wedge">
-                        Glasschuiframen met glazen spie
-                      </option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingLeft">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLeft"
-                    aria-expanded="false"
-                    aria-controls="collapseLeft"
-                  >
-                    Carport Linker Zijwand
-                  </button>
-                </h2>
-                <div
-                  id="collapseLeft"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingLeft"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body text-center">
-                    <select name="Left wall" class="w-75" required>
-                      <option value="open">Open</option>
-                      <option value="Wedge">Spie</option>
-                      <option value="Polycarbonate side wall">
-                        Polycarbonaat zijwand
-                      </option>
-                      <option value="Fixed frame with window">
-                        Vast frame met raam
-                      </option>
-                      <option value="Sliding glass windows">
-                        Glazen schuiframen
-                      </option>
-                      <option value="Aluminum wall with wedge">
-                        Aluminium zijwand met spie
-                      </option>
-                      <option
-                        value="Sliding glass windows with polycarbonate wedge"
-                      >
-                        Glazen schuiframen met polycarbonaat spie
-                      </option>
-                      <option value="Sliding glass windows with glass wedge">
-                        Glasschuiframen met glazen spie
-                      </option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingLighting">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLighting"
-                    aria-expanded="false"
-                    aria-controls="collapseLighting"
-                  >
-                    Carport Verlichting
-                  </button>
-                </h2>
-                <div
-                  id="collapseLighting"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingLighting"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body text-center">
-                    <select name="Lighting" class="w-75" required>
-                      <option value="none">None</option>
-                      <option value="LED">LED</option>
+                      <option value="cream">crème (RAL9001)</option>
                     </select>
                   </div>
                 </div>
@@ -320,7 +174,7 @@
                     aria-expanded="false"
                     aria-controls="collapseInstallation"
                   >
-                    Carport Installatie
+                    Inclusief installatie
                   </button>
                 </h2>
                 <div
@@ -336,8 +190,8 @@
                     </select>
                     <p>
                       <small
-                        >Als nee is geselecteerd, wordt de installatie
-                        uitgevoerd door de klant</small
+                        >Als u nee selecteert, wordt de installatie uitgevoerd
+                        door de klant</small
                       >
                     </p>
                   </div>
@@ -476,24 +330,27 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="d-flex flex-column flex-md-row justify-content-between pt-20"
-            >
-              <div>
-                <h3>Extra notities:</h3>
-                <span class="wpcf7-form-control-wrap" data-name="your-message">
-                  <textarea
-                    name="your-message"
-                    cols="5"
-                    rows="3"
-                    class="wpcf7-form-control wpcf7-textarea"
-                    aria-invalid="false"
-                    style="width: 333px; height: 114px"
-                  ></textarea>
-                </span>
+              <div
+                class="d-flex flex-column flex-md-row justify-content-between pt-20"
+              >
+                <div>
+                  <h3>Extra Notities:</h3>
+                  <span
+                    class="wpcf7-form-control-wrap"
+                    data-name="your-message"
+                  >
+                    <textarea
+                      name="your-message"
+                      cols="5"
+                      rows="3"
+                      class="wpcf7-form-control wpcf7-textarea"
+                      aria-invalid="false"
+                      style="width: 333px; height: 114px"
+                    ></textarea>
+                  </span>
+                </div>
+                <input class="main-btn mt-20 align-self-center" type="submit" />
               </div>
-              <input class="main-btn mt-20 align-self-center" type="submit" />
             </div>
           </form>
         </div>
@@ -511,17 +368,6 @@
                 <a href="#">
                   <img src="../../assets/images/logo.png" alt="Logo" />
                 </a>
-                <ul class="footer-social mt-25 d-flex justify-content-center">
-                  <li>
-                    <a href="#"><i class="lni-facebook-filled"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="lni-twitter-original"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="lni-instagram"></i></a>
-                  </li>
-                </ul>
               </div>
               <!-- footer logo -->
             </div>

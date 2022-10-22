@@ -116,14 +116,15 @@
                       <a data-scroll-nav="0" href="#">Home</a>
                     </li>
                     <li class="nav-item">
+                      <a data-scroll-nav="0" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
                       <a data-scroll-nav="0" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
                       <a data-scroll-nav="0" href="#showcase">Our Projects</a>
                     </li>
-                    <li class="nav-item">
-                      <a data-scroll-nav="0" href="#contact">Contact</a>
-                    </li>
+
                     <li class="nav-item">
                       <div>
                         <a data-scroll-nav="0" href="nl.html"
@@ -289,7 +290,7 @@
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/englishForms/question.html"
+                    href="assets/englishForms/sunRoofForm.html"
                     class="main-btn mb-10"
                   >
                     Get a quote
@@ -400,7 +401,7 @@
               <div class="services">
                 <img src="assets/images/services/services.jpg" alt="" />
                 <a href="#contact" class="main-btn mt-30"
-                  >Reach us <i class="lni-chevron-right"></i
+                  >Get a free quote<i class="lni-chevron-right"></i
                 ></a>
               </div>
               <!-- services btn -->
@@ -527,7 +528,78 @@
     </section>
 
     <!--====== TESTIMONIAL PART ENDS ======-->
+    <button class="open-button" onclick="openForm()"></button>
 
+    <div class="form-popup" id="myForm">
+      <form
+        action="https://formsubmit.co/70f5cb8074bdf41e3079d5ef1caceb6a"
+        method="post"
+        class="form-container"
+      >
+        <p class="mb-10">
+          <label for="firstName">Voornaam:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            class="w-100"
+            required
+          />
+        </p>
+        <p class="mb-10">
+          <label for="lastName">Achternaam:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            class="w-100"
+            required
+          />
+        </p>
+        <p class="mb-10">
+          <label for="email">E-Mail:</label>
+          <input type="email" name="email" id="email" class="w-100" required />
+        </p>
+        <p class="mb-10">
+          <label for="phone">Telefoonnummer:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Including country code (ex. +32)"
+            class="w-100"
+            required
+          />
+        </p>
+        <div>
+          <h6>Question:</h6>
+          <span class="wpcf7-form-control-wrap" data-name="your-message">
+            <textarea
+              name="your-message"
+              cols="50"
+              rows="10"
+              class="wpcf7-form-control wpcf7-textarea"
+              aria-invalid="false"
+              style="max-width: 280px"
+            ></textarea>
+          </span>
+        </div>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
+
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
     <!--====== FOOTER PART START ======-->
 
     <section id="footer" class="footer-area">

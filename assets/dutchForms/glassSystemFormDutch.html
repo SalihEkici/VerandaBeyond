@@ -94,112 +94,6 @@
           >
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="headingPersonalDetails">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsePersonalDetails"
-                    aria-expanded="true"
-                    aria-controls="collapsePersonalDetails"
-                  >
-                    Persoonlijke gegevens
-                  </button>
-                </h2>
-                <div
-                  id="collapsePersonalDetails"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingPersonalDetails"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div class="d-flex flex-column justify-content-around">
-                      <p class="mb-10">
-                        <label for="firstName">Voornaam:</label>
-                        <input
-                          type="text"
-                          name="firstName"
-                          id="firstName"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="lastName">Achternaam:</label>
-                        <input
-                          type="text"
-                          name="lastName"
-                          id="lastName"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="email">E-Mail:</label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="phone">Telefoonnummer:</label>
-                        <input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          placeholder="Inclusief landcode (bijv. +32)"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="postcode">Postcode:</label>
-                        <input
-                          type="text"
-                          name="postcode"
-                          id="postcode"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="city">Stad:</label>
-                        <input
-                          type="text"
-                          name="city"
-                          id="city"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="street">Straat:</label>
-                        <input
-                          type="text"
-                          name="street"
-                          id="street"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="housenumber">Huisnummer:</label>
-                        <input
-                          type="text"
-                          name="housenumber"
-                          id="housenumber"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
                 <h2 class="accordion-header" id="headingDimensions">
                   <button
                     class="accordion-button collapsed"
@@ -595,6 +489,139 @@
                           >
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDelivery">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseDelivery"
+                    aria-expanded="false"
+                    aria-controls="collapseDelivery"
+                  >
+                    Bezorging
+                  </button>
+                </h2>
+                <div
+                  id="collapseDelivery"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingDelivery"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body text-center">
+                    <select name="Delivery" class="w-75" required>
+                      <option value="yes">Ja (2€ per kilometer)</option>
+                      <option value="no">Afhalen</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingcontactInfo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsecontactInfo"
+                    aria-expanded="false"
+                    aria-controls="collapsecontactInfo"
+                  >
+                    Contactgegevens
+                  </button>
+                </h2>
+                <div
+                  id="collapsecontactInfo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingcontactInfo,"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="d-flex flex-column justify-content-around">
+                      <p class="mb-10">
+                        <label for="firstName">Voornaam:</label>
+                        <input
+                          type="text"
+                          name="firstName"
+                          id="firstName"
+                          class="w-100"
+                          required
+                        />
+                      </p>
+                      <p class="mb-10">
+                        <label for="lastName">Achternaam:</label>
+                        <input
+                          type="text"
+                          name="lastName"
+                          id="lastName"
+                          class="w-100"
+                          required
+                        />
+                      </p>
+                      <p class="mb-10">
+                        <label for="email">E-Mail:</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="w-100"
+                          required
+                        />
+                      </p>
+                      <p class="mb-10">
+                        <label for="phone">Telefoonnummer:</label>
+                        <input
+                          type="tel"
+                          name="phone"
+                          id="phone"
+                          placeholder="Including country code (ex. +32)"
+                          class="w-100"
+                          required
+                        />
+                      </p>
+                      <p class="mb-10">
+                        <label for="postcode">Postcode:</label>
+                        <input
+                          type="text"
+                          name="postcode"
+                          id="postcode"
+                          class="w-100"
+                          required
+                        />
+                      </p>
+                      <p class="mb-10">
+                        <label for="city">Stad:</label>
+                        <input
+                          type="text"
+                          name="city"
+                          id="city"
+                          class="w-100"
+                          required
+                        />
+                      </p>
+                      <p class="mb-10">
+                        <label for="street">Straat:</label>
+                        <input
+                          type="text"
+                          name="street"
+                          id="street"
+                          class="w-100"
+                          required
+                        />
+                      </p>
+                      <p class="mb-10">
+                        <label for="housenumber">Huisnummer:</label>
+                        <input
+                          type="text"
+                          name="housenumber"
+                          id="housenumber"
+                          class="w-100"
+                          required
+                        />
+                      </p>
                     </div>
                   </div>
                 </div>
