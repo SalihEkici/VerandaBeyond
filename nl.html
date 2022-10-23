@@ -11,7 +11,7 @@
     />
 
     <!--====== Title ======-->
-    <title>Veranda and beyond</title>
+    <title>Veranda&Beyond</title>
 
     <!--====== Favicon Icon ======-->
     <link
@@ -43,6 +43,10 @@
 
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script
+      src="https://kit.fontawesome.com/f50f7a7795.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -60,6 +64,7 @@
     <!--====== HEADER PART START ======-->
 
     <header class="header-area">
+      <!--===== equipment detail modal ====-->
       <div class="modal">
         <div
           id="modalBox"
@@ -67,6 +72,7 @@
         ></div>
         <div class="closeModal">+</div>
       </div>
+
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -80,8 +86,8 @@
                   <a class="navbar-brand" href="index.html">
                     <img src="assets/images/logo" alt="Logo" width="300px" />
                   </a>
-                  <a href="#contact" class="main-btn" style="width: 300px"
-                    >Gratis offerte aanvragen</a
+                  <a href="#contact" class="main-btn" style="width: 250px"
+                    >Get a free quote</a
                   >
                 </div>
                 <!-- Logo -->
@@ -111,14 +117,18 @@
                     "
                   >
                     <li class="nav-item active">
-                      <a data-scroll-nav="0" href="#">Home</a>
+                      <a data-scroll-nav="0" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a data-scroll-nav="0" href="#service">Diensten</a>
+                      <a data-scroll-nav="0" href="#product">Products</a>
                     </li>
                     <li class="nav-item">
-                      <a data-scroll-nav="0" href="#showcase">Onze projecten</a>
+                      <a data-scroll-nav="0" href="#service">Services</a>
                     </li>
+                    <li class="nav-item">
+                      <a data-scroll-nav="0" href="#showcase">Our Projects</a>
+                    </li>
+
                     <li class="nav-item">
                       <a data-scroll-nav="0" href="#contact">Contact</a>
                     </li>
@@ -152,32 +162,179 @@
 
     <!--====== HEADER PART ENDS ======-->
 
-    <!--PICTURE PART STARTS-->
-    <section class="col-m-10 d-flex mx-auto flex-column flex-md-row mt-190">
-      <div class="w-100">
-        <img
-          style="width: 100%; border: 5px solid white; border-radius: 20px"
-          src="assets/images/showcase/fullSystem.jpg"
-          alt=""
-        />
+    <section id="home" class="slider-area pt-100 mt-50">
+      <div class="container-fluid position-relative">
+        <div class="slider-active">
+          <div class="single-slider">
+            <div class="slider-bg">
+              <div class="row no-gutters align-items-center">
+                <div class="col-lg-4 col-md-5">
+                  <div class="slider-product-image d-none d-md-block">
+                    <img src="assets/images/slider/1.jpg" alt="Slider" />
+                  </div>
+                  <!-- slider product image -->
+                </div>
+                <div class="col-lg-8 col-md-7">
+                  <div class="slider-product-content">
+                    <h1
+                      class="slider-title mb-10"
+                      data-animation="fadeInUp"
+                      data-delay="0.3s"
+                    >
+                      <span>Veranda</span>
+                      and
+                      <span>Carport</span>
+                    </h1>
+                    <p
+                      class="mb-25"
+                      data-animation="fadeInUp"
+                      data-delay="0.9s"
+                    >
+                      If you wish to sit in a car which hasn't been under the
+                      sun or sit outside under the rain without getting wet,
+                      welcome to the right place!
+                      <strong>Check out our products!</strong>
+                    </p>
+                    <a
+                      class="main-btn"
+                      href="#product"
+                      data-animation="fadeInUp"
+                      data-delay="1.5s"
+                      >Explore Products <i class="lni-chevron-right"></i
+                    ></a>
+                  </div>
+                  <!-- slider product content -->
+                </div>
+              </div>
+              <!-- row -->
+            </div>
+            <!-- container -->
+          </div>
+          <!-- single slider -->
+
+          <div class="single-slider">
+            <div class="slider-bg">
+              <div class="row no-gutters align-items-center">
+                <div class="col-lg-4 col-md-5">
+                  <div class="slider-product-image d-none d-md-block">
+                    <img src="assets/images/slider/3.jpg" alt="Slider" />
+                  </div>
+                  <!-- slider product image -->
+                </div>
+                <div class="col-lg-8 col-md-7">
+                  <div class="slider-product-content">
+                    <h6
+                      class="slider-title mb-10"
+                      data-animation="fadeInUp"
+                      data-delay="0.3s"
+                    >
+                      <span>We</span> are here to <span> serve</span>
+                    </h6>
+                    <p
+                      class="mb-25"
+                      data-animation="fadeInUp"
+                      data-delay="0.9s"
+                    >
+                      Ask a question or ask for a free quotation. <br />
+                      We will reply to you as soon as possible with the
+                      requested information!
+                    </p>
+                    <a
+                      class="main-btn"
+                      href="#service"
+                      data-animation="fadeInUp"
+                      data-delay="1.5s"
+                      >See Our Services<i class="lni-chevron-right"></i
+                    ></a>
+                  </div>
+                  <!-- slider product content -->
+                </div>
+              </div>
+              <!-- row -->
+            </div>
+            <!-- container -->
+          </div>
+          <!-- single slider -->
+
+          <div class="single-slider">
+            <div class="slider-bg">
+              <div class="row no-gutters align-items-center">
+                <div class="col-lg-4 col-md-5">
+                  <div class="slider-product-image d-none d-md-block">
+                    <img src="assets/images/slider/2.jpg" alt="Slider" />
+                  </div>
+                  <!-- slider product image -->
+                </div>
+                <div class="col-lg-8 col-md-7">
+                  <div class="slider-product-content">
+                    <h1
+                      class="slider-title mb-10"
+                      data-animation="fadeInUp"
+                      data-delay="0.3s"
+                    >
+                      <span>Get</span> a Free <span>Quote</span>
+                    </h1>
+                    <p
+                      class="mb-25"
+                      data-animation="fadeInUp"
+                      data-delay="0.9s"
+                    >
+                      After customizing your very own product, fill in the
+                      required information in the contact form below to receive
+                      a <strong>free quotation!</strong>
+                    </p>
+                    <p>
+                      <a
+                        class="main-btn"
+                        href="#contact"
+                        data-animation="fadeInUp"
+                        data-delay="1.5s"
+                        >Contact Us <i class="lni-chevron-right"></i
+                      ></a>
+                    </p>
+                  </div>
+
+                  <!-- slider product content -->
+                </div>
+              </div>
+              <!-- row -->
+            </div>
+            <!-- container -->
+          </div>
+          <!-- single slider -->
+        </div>
+        <!-- slider active -->
+        <div class="slider-social">
+          <div class="row justify-content-end">
+            <div class="col-lg-7 col-md-6">
+              <ul class="social text-right">
+                <li>
+                  <a target="_blank" href="https://www.facebook.com"
+                    ><i class="lni-facebook-filled"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.twitter.com"
+                    ><i class="lni-twitter-original"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.instagram.com"
+                    ><i class="lni-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="d-none d-md-flex flex-column w-50">
-        <img
-          style="width: 100%; border: 5px solid white; border-radius: 20px"
-          src="assets/images/showcase/glassSystem.jpg"
-          alt=""
-        />
-        <img
-          style="width: 100%; border: 5px solid white; border-radius: 20px"
-          src="assets/images/showcase/carport.jpg"
-          alt=""
-        />
-      </div>
+      <!-- container fluid -->
     </section>
-    <!--PICTURE PART ENDS-->
+    <!--====== CONTACT PART START ======-->
+    <!--====== PRODUCT PART START ======-->
 
     <section
-      id="contact"
+      id="product"
       style="background-color: #fffaf6"
       class="contact-area pt-115"
     >
@@ -185,7 +342,7 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <div class="contact-title text-center">
-              <h2 class="title">Kies een product voor een gratis offerte</h2>
+              <h2 class="title">Choose a Product to Get a Free Quote</h2>
             </div>
             <!-- contact title -->
           </div>
@@ -195,16 +352,18 @@
         <div class="col-lg-12">
           <div>
             <div
-              class="col-12 d-flex flex-column flex-md-row justify-content-around flex-wrap p-5"
+              class="col-12 d-flex flex-column flex-md-row text-center justify-content-around flex-wrap p-5"
               style="border-top: solid 1px orange"
             >
-              <div class="card col-12 col-lg-3 m-2 p-0 text-center">
+              <div class="card col-12 col-lg-4 m-2 p-0">
                 <img
                   class="card-img-top"
                   id="veranda"
                   src="assets/images/showcase/fullSystem.jpg"
                   alt="Card image cap"
                 />
+                <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+
                 <div class="card-title m-3">
                   <h5 style="border-bottom: 1px solid orange">Veranda</h5>
                 </div>
@@ -212,20 +371,21 @@
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/dutchForms/verandaFormDutch.html"
+                    href="assets/englishForms/verandaForm.html"
                     class="main-btn mb-10"
                   >
-                    Vraag offerte aan
+                    Get a quote
                   </a>
                 </div>
               </div>
-              <div class="card col-12 col-lg-3 m-2 p-0">
+              <div class="card col-12 col-lg-4 m-2 p-0">
                 <img
                   class="card-img-top"
                   id="carport"
                   src="assets/images/showcase/carport.jpg"
                   alt="Card image cap"
                 />
+                <i class="fa-solid fa-magnifying-glass fa-3x"></i>
                 <div
                   class="card-title text-center m-3"
                   style="border-bottom: 1px solid orange"
@@ -237,66 +397,67 @@
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/dutchForms/carportFormDutch.html"
+                    href="assets/englishForms/carportForm.html"
                     class="main-btn mb-10"
                   >
-                    Vraag offerte aan
+                    Get a quote
                   </a>
                 </div>
               </div>
-              <div class="card col-12 col-lg-3 m-2 p-0">
+              <div class="card col-12 col-lg-4 m-2 p-0">
                 <img
                   id="slidingGlassDoors"
                   class="card-img-top"
                   src="assets/images/services/services.jpg"
                   alt="Card image cap"
                 />
+                <i class="fa-solid fa-magnifying-glass fa-3x"></i>
                 <div
                   class="card-title text-center m-3"
                   style="border-bottom: 1px solid orange"
                 >
-                  <h5>Glazen Schuifwanden</h5>
+                  <h5>Sliding Glass Doors</h5>
                 </div>
                 <div
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/dutchForms/glassSystemFormDutch.html"
+                    href="assets/englishForms/glassSystemForm.html"
                     class="main-btn mb-10"
                   >
-                    Vraag offerte aan
+                    Get a quote
                   </a>
                 </div>
               </div>
-              <div class="card col-12 col-lg-3 m-2 p-0">
+              <div class="card col-12 col-lg-4 m-2 p-0">
                 <img
                   id="awnings"
                   class="card-img-top"
                   src="assets/images/showcase/fullSystem.jpg"
                   alt="Card image cap"
                 />
+                <i class="fa-solid fa-magnifying-glass fa-3x"></i>
                 <div
                   class="card-title text-center m-3"
                   style="border-bottom: 1px solid orange"
                 >
-                  <h5>Zonweringen</h5>
+                  <h5>Awnings</h5>
                 </div>
                 <div
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/dutchForms/sunRoofFormDutch.html"
+                    href="assets/englishForms/sunRoofForm.html"
                     class="main-btn mb-10"
                   >
-                    Vraag offerte aan
+                    Get a quote
                   </a>
                 </div>
               </div>
             </div>
             <p class="text-center">
               <small
-                >Klik op een van de systemen om een gratis offerte te
-                ontvangen!</small
+                >Click on one of the systems to receive a free quote!</small
               >
             </p>
             <!-- row -->
@@ -309,7 +470,7 @@
       <!-- container -->
     </section>
 
-    <!--====== CONTACT PART ENDS ======-->
+    <!--======PRODUCT PART ENDS======-->
 
     <!--====== SERVICES PART START ======-->
 
@@ -318,14 +479,14 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="section-title pb-30">
-              <h5 class="mb-15">Onze diensten</h5>
+              <h5 class="mb-15">Our Services</h5>
               <h3 class="title mb-15">
-                Ontvang de beste service via Veranda&Beyond!
+                Receive the best service via Veranda &amp; Beyond
               </h3>
               <p>
-                Of het nu gaat om een ​​offerte, het opmeten, installeren of een
-                doe-het-zelf pakketlevering, bij Veranda Plus vinden we dat elke
-                klant de beste ervaring verdient.
+                May it be a quotation, taking measurements, installation or a
+                DIY package delivery, at Veranda Plus we believe every customer
+                deserves the best experience.
               </p>
             </div>
             <!-- section title -->
@@ -337,7 +498,7 @@
               <div class="services">
                 <img src="assets/images/services/services.jpg" alt="" />
                 <a href="#contact" class="main-btn mt-30"
-                  >Bereik ons<i class="lni-chevron-right"></i
+                  >Get a free quote<i class="lni-chevron-right"></i
                 ></a>
               </div>
               <!-- services btn -->
@@ -353,11 +514,10 @@
                       <i class="lni-grid-alt"></i>
                     </div>
                     <div class="services-content mt-20">
-                      <h5 class="title mb-10">Installatie</h5>
+                      <h5 class="title mb-10">Installation</h5>
                       <p>
-                        Ons team komt voor installatie in ruil voor een kleine
-                        installatievergoeding voor elke
-                        niet-doe-het-zelf-bestelling.
+                        Our team will come for installation in exchange for a
+                        small instalation fee for any non DIY order.
                       </p>
                     </div>
                   </div>
@@ -368,11 +528,11 @@
                       <i class="lni-ruler-pencil"></i>
                     </div>
                     <div class="services-content mt-20">
-                      <h5 class="title mb-10">Afmetingen</h5>
+                      <h5 class="title mb-10">Measurements</h5>
                       <p>
-                        Wanneer een bestelling is verwerkt, gaat ons team naar
-                        uw huis om de afmetingen op te nemen voor welk product u
-                        ook kiest.
+                        When an order is processed, our team will go to your
+                        home to take the measurements for whichever product you
+                        choose.
                       </p>
                     </div>
                   </div>
@@ -384,10 +544,10 @@
                       <i class="lni-customer"></i>
                     </div>
                     <div class="services-content mt-20">
-                      <h5 class="title mb-10">Offerte</h5>
+                      <h5 class="title mb-10">Quotation</h5>
                       <p>
-                        Ontvang na uw keuze voor uw eigen veranda, carport,
-                        glassysteem of doe-het-zelfpakket een gratis offerte!
+                        Receive a free quotation after deciding on your very own
+                        veranda, carport, glass system or DIY package!
                       </p>
                     </div>
                   </div>
@@ -400,9 +560,9 @@
                     <div class="services-content mt-20">
                       <h5 class="title mb-10">Support</h5>
                       <p>
-                        Als u na de installatie ooit een probleem met het
-                        product tegenkomt, komt ons ondersteuningsteam uw
-                        probleem zo snel mogelijk oplossen.
+                        After installation, if you ever encounter an issue with
+                        the product, our support team will come to fix your
+                        problem as soon as possible.
                       </p>
                     </div>
                   </div>
@@ -420,35 +580,39 @@
     </section>
 
     <!--====== SERVICES PART ENDS ======-->
-
     <!--====== SHOWCASE PART START ======-->
 
-    <section id="showcase" class="showcase-area pt-100 pb-50">
+    <section id="showcase" class="showcase-area pt-50 pb-50">
       <div class="container">
-        <div class="row">
+        <div class="flex-column">
           <div class="col-lg-4">
             <div class="showcase-title pt-25">
-              <h2 class="title">Onze Projekten</h2>
+              <h2 class="title">Our Projects</h2>
             </div>
             <!-- showcase title -->
           </div>
           <div class="col-lg-6">
             <div class="showcase-title pt-25">
-              <p>Hier zijn enkele projecten die ons team heeft gemaakt.</p>
+              <p>Here are some projects which our team has made!</p>
             </div>
             <!-- showcase title -->
           </div>
         </div>
         <!-- row -->
         <div class="row">
-          <div class="col-lg-12">
-            <div class="showcase-active mt-65 mb-65">
+          <div class="col-lg-12 mx-auto">
+            <div class="showcase-active mt-3">
               <div class="single-showcase d-flex flex-row">
                 <img
                   src="assets/images/showcase/fullSystem.jpg"
                   alt="Showcase"
                 />
-                <button class="main-btn system-button">Veranda</button>
+                <button
+                  class="main-btn system-button"
+                  style="height: 50px; margin-bottom: 15px"
+                >
+                  <p style="color: white">Veranda</p>
+                </button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
@@ -461,13 +625,16 @@
                   src="assets/images/showcase/glassSystem.jpg"
                   alt="Showcase"
                 />
-                <button class="main-btn system-button">Glassystemen</button>
+                <button class="main-btn system-button">Glass system</button>
               </div>
               <!-- single showcase -->
             </div>
             <!-- showcase active -->
           </div>
         </div>
+        <p class="text-center d-md-none">
+          <small>slide to go to next picture</small>
+        </p>
         <!-- row -->
       </div>
       <!-- container -->
@@ -490,9 +657,9 @@
                 <div class="single-testimonial">
                   <i class="lni-quotation"></i>
                   <p class="mb-30">
-                    Onze missie is om onze klanten een eersteklas ervaring te
-                    bieden, om hen het comfort en de ontspanning te bieden die
-                    ze altijd al wilden.
+                    Our mission is to provide our customers with a premium
+                    experience, to provide them with the comfort and relaxation
+                    they have always wanted.
                   </p>
                   <h6 class="title">Veranda&Beyond</h6>
                 </div>
@@ -519,15 +686,12 @@
     </section>
 
     <!--====== TESTIMONIAL PART ENDS ======-->
-
-    <!--====== CONTACT PART START ======-->
-
     <section id="contact" class="contact-area pt-115">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="contact-title text-center">
-              <h2 class="title">Contact met ons opnemen</h2>
+              <h2 class="title">Get In Touch</h2>
             </div>
             <!-- contact title -->
           </div>
@@ -537,8 +701,19 @@
           <div class="row">
             <div class="col-lg-4">
               <div class="contact-info pt-25">
-                <h4 class="info-title">Contactgegevens</h4>
+                <h4 class="info-title">Contact Info</h4>
                 <ul>
+                  <li>
+                    <div class="single-info mt-30">
+                      <div class="info-icon">
+                        <i class="lni-phone-handset"></i>
+                      </div>
+                      <div class="info-content">
+                        <p>fake number</p>
+                      </div>
+                    </div>
+                    <!-- single info -->
+                  </li>
                   <li>
                     <div class="single-info mt-30">
                       <div class="info-icon">
@@ -550,43 +725,94 @@
                     </div>
                     <!-- single info -->
                   </li>
+                  <li>
+                    <div class="single-info mt-30">
+                      <div class="info-icon">
+                        <i class="lni-home"></i>
+                      </div>
+                      <div class="info-content">
+                        <p>fake address</p>
+                      </div>
+                    </div>
+                    <!-- single info -->
+                  </li>
                 </ul>
               </div>
               <!-- contact info -->
             </div>
-
-            <div class="col-lg-12">
+            <div class="col-lg-8">
               <div class="contact-form">
-                <div>
-                  <div
-                    class="d-flex flex-column flex-md-row flex-wrap justify-content-around p-5 my-auto"
-                  >
-                    <a
-                      href="assets/dutchForms/verandaFormDutch.html"
-                      class="main-btn mb-10"
-                    >
-                      Veranda
-                    </a>
-                    <a
-                      href="assets/dutchForms/carportFormDutch.html"
-                      class="main-btn mb-10"
-                    >
-                      Carport
-                    </a>
-                    <a
-                      href="assets/dutchForms/glassSystemFormDutch.html"
-                      class="main-btn mb-10"
-                    >
-                      Glazensystem
-                    </a>
-                    <a
-                      href="assets/englishForms/question.html"
-                      class="main-btn mb-10"
-                    >
-                      Stel een vraag
-                    </a>
+                <form
+                  id="contact-form"
+                  action="https://formsubmit.co/70f5cb8074bdf41e3079d5ef1caceb6a"
+                  method="post"
+                  data-toggle="validator"
+                >
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="single-form form-group">
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Enter Your Name"
+                          data-error="Name is required."
+                          required="required"
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form form-group">
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Enter Your Email"
+                          data-error="Valid email is required."
+                          required="required"
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- single form -->
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single-form form-group">
+                        <input
+                          type="tel"
+                          name="phone"
+                          placeholder="Enter Your Phone Number (including country code)"
+                          data-error="Number is required."
+                          required="required"
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- single form -->
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="single-form form-group">
+                        <textarea
+                          name="message"
+                          placeholder="Enter Your Message"
+                          data-error="Please,leave us a message."
+                          required="required"
+                        ></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <!-- single form -->
+                    </div>
+                    <p class="form-message"></p>
+                    <div class="col-lg-12 d-flex justify-content-between">
+                      <div class="single-form form-group">
+                        <button class="main-btn" type="submit">
+                          CONTACT NOW
+                        </button>
+                      </div>
+                      <!-- single form -->
+                    </div>
                   </div>
-                </div>
+                  <!-- row -->
+                </form>
               </div>
               <!-- row -->
             </div>
@@ -606,13 +832,12 @@
       <div class="container">
         <div class="footer-widget pt-75 pb-120">
           <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-5 col-sm-7">
-              <div class="footer-logo mt-40 text-center">
-                <a href="#">
+            <div class="col-lg-3 col-md-5 col-sm-7 text-center">
+              <div class="footer-logo mt-40">
+                <a href="#" class="mx-auto">
                   <img src="assets/images/logo.png" alt="Logo" />
                 </a>
-
-                <ul class="footer-social mt-25">
+                <ul class="footer-social mt-25 d-none">
                   <li>
                     <a href="#"><i class="lni-facebook-filled"></i></a>
                   </li>
@@ -662,6 +887,6 @@
     <script src="assets/js/jquery.nice-number.min.js"></script>
 
     <!--====== Main js ======-->
-    <script src="assets/js/nlmain.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

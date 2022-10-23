@@ -250,7 +250,6 @@ const nodeListImages = document.querySelectorAll(".card-img-top");
 const arrayImages = Array.from(nodeListImages);
 const closeModal = document.querySelector(".closeModal");
 const details = document.getElementById("modalBox");
-const productImageContainer = document.getElementById("equipmentImage");
 
 nodeListImages.forEach((image) => {
   image.addEventListener("click", () => {
