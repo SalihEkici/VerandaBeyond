@@ -258,7 +258,7 @@ nodeListImages.forEach((image) => {
       details.innerHTML = `
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
-                                src="assets/images/services/services.jpg"
+                                src="assets/images/showcase/poly-roof-veranda.jpg"
                                 alt="Card image cap"
                                 />
                                 <div class="card-body">
@@ -290,7 +290,7 @@ nodeListImages.forEach((image) => {
                               
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
-                                src="assets/images/services/services.jpg"
+                                src="assets/images/showcase/glass-roof-veranda.jpg"
                                 alt="Card image cap"
                                 />
                                   <div class="card-body">
@@ -322,7 +322,7 @@ nodeListImages.forEach((image) => {
       details.innerHTML = `
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
-                                src="assets/images/services/services.jpg"
+                                src="assets/images/showcase/poly-roof-carport.jpg"
                                 alt="Card image cap"
                                 />
                                   <div class="card-body">
@@ -358,7 +358,7 @@ nodeListImages.forEach((image) => {
 
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
-                                src="assets/images/services/services.jpg"
+                                src="assets/images/showcase/glass-roof-carport.jpg"
                                 alt="Card image cap"
                                 />
                                   <div class="card-body">
@@ -396,7 +396,7 @@ nodeListImages.forEach((image) => {
     } else if (image.id == "slidingGlassDoors") {
       details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
                             <img 
-                            src="assets/images/services/services.jpg"
+                            src="assets/images/showcase/glass3.jpg"
                             alt="Card image cap"
                             />
                             <div class="card-body">
@@ -435,7 +435,7 @@ nodeListImages.forEach((image) => {
     } else if (image.id == "awnings") {
       details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
                             <img 
-                            src="assets/images/services/services.jpg"
+                            src="assets/images/showcase/awning3.jpg"
                             alt="Card image cap"
                             />
                             <div class="card-body">

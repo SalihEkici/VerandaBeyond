@@ -1896,3 +1896,7 @@ p.form-message.error {
 .card {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
+
+.noHover{
+  pointer-events: none;
+}
