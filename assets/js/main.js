@@ -264,24 +264,23 @@ nodeListImages.forEach((image) => {
                                 <div class="card-body">
                                   <h5 class="card-title">Polycarbonate Roof Veranda</h5>
                                   <div class="card-text">
-                                    <p >Polycarbonate sheet is a very good product to create a high-quality roof finish for your porch. It is also possible to make a wedge.</p>
+                                    <p>Polycarbonate sheets are very good products to create a high-quality roof for your veranda. It is also possible to use these sheets to close off any openings you request.</p>
                                     <ul class="p-3">
 
                                     <li>Available in 3 colors (Antraciet, black and cream)</li>
                                   
-                                    <li>Roofing polycarbonate clear or opaque</li>
+                                    <li>Polycarbonate sheets can be clear or opaque</li>
                                   
-                                    <li>Round or straight model gutters</li>
+                                    <li>Customizable gutter shape</li>
                                   
-                                    <li>Lighting LED spotlight set</li>
+                                    <li>Optional LED lights</li>
                                     
-                                  
-                                    <li>10-year warranty on profile and color accuracy</li>
+                                    <li>10-year warranty on structural integrity</li>
                                     </ul>
                                   </div>
                                   <a
                                   href="assets/englishForms/verandaForm.html"
-                                  class="main-btn mb-10 mt-50"
+                                  class="main-btn mb-10"
                                   >
                                     Get a quote
                                   </a>
@@ -296,15 +295,14 @@ nodeListImages.forEach((image) => {
                                   <div class="card-body">
                                     <h5 class="card-title">Glass Roof Veranda</h5>
                                     <div class="card-text">
-                                      <p >Do you always want perfect light? And also be able to enjoy the starry sky and clouds drifting by? Then a glass veranda is the best choice for you.</p>
+                                      <p >Do you want perfect lighting? Maybe you want to be able to enjoy the starry sky and clouds drifting by? Then a glass top veranda is the best choice for you.</p>
                                       <ul class="p-3">
                                       <li>Available in 3 colors (Antraciet, black and cream)</li>
-                                      <li> Roof covering 44.2 laminated safety glass</li>
-                                      <li> Lengths possible up to 400cm</li>
-                                      <li>Round or straight model gutters</li>
-                                      <li>U-profiles, with draught strips</li>
-                                      <li>Lighting LED spotlight set</li>
-                                      <li>10-year warranty on profile and color accuracy</li>
+                                      <li>Roof covered with laminated safety glass</li>
+                                      <li>Lengths possible up to 400cm</li>
+                                      <li>Customizable gutter shape</li>
+                                      <li>Optional LED lights</li>
+                                      <li>10-year warranty on structural integrity</li>
                                       </ul>
                                     </div>
                                   
@@ -329,26 +327,19 @@ nodeListImages.forEach((image) => {
                                     <h5 class="card-title">Polycarbonate Roof Carport</h5>
                                     <div class="card-text">
                                       <p>
-                                      An aluminum car cover with a polycarbonate roof that has a very long lifespan, 
-                                      provides the best protection for you car and also requires little maintenance. 
-                                      In addition, an aluminum cover from Veranda &amp; Beyond also offers a beautiful appearance.
+                                      Want a safe storage space for your vehicles? Then a carport from Veranda & Beyond is exactly what you're looking for!
                                       </p>
                                       <ul class="p-3">
-
-                                      <li> Available in 3 colors (Antraciet, black and cream)</li>
-                                    
-                                      <li> Roofing polycarbonate clear or opaque</li>
-                                    
-                                      <li> Round or straight model gutters</li>
-                                    
-                                      <li> Lighting LED spotlight set</li>
-                                      
-                                      <li> 10-year warranty on profile and color accuracy</li>
+                                      <li>Available in 3 colors (Antraciet, black and cream)</li>
+                                      <li>Polycarbonate sheets can be clear or opaque</li>
+                                      <li>Customizable gutter shape</li>
+                                      <li>Optional LED lights</li>
+                                      <li>10-year warranty on structural integrity</li>
                                       </ul>
                                     </div>
                                     <a
                                     href="assets/englishForms/verandaForm.html"
-                                    class="main-btn mb-10 mt-50"
+                                    class="main-btn mb-10"
                                     >
                                       Get a quote
                                     </a>
@@ -364,23 +355,14 @@ nodeListImages.forEach((image) => {
                                   <div class="card-body">
                                   <h5 class="card-title">Glass Roof Carport</h5>
                                   <div class="card-text">
-                                    <p >Would you prefer a glass carport? That is also possible at Valk &amp; Beyond.</p>
+                                    <p >Would you prefer a glass carport? That is also possible at Veranda &amp; Beyond.</p>
                                     <ul class="p-3">
-
                                     <li>Available in 3 colors (Antraciet, black and cream)</li>
-
-                                    <li> Roof covering 44.2 laminated safety glass</li>
-
+                                    <li>Roof covered with laminated safety glass</li>
                                     <li> Lengths possible up to 400cm</li>
-                                  
-                                    <li> Round or straight model gutters</li>
-
-                                    <li> U-profiles, with draught strips</li>
-                                    
-                                    <li> Lighting LED spotlight set</li>
-                                    
-                                  
-                                    <li>10-year warranty on profile and color accuracy</li>
+                                    <li>Customizable gutter shape</li>
+                                    <li>Optional LED lights</li>
+                                    <li>10-year warranty on structural integrity</li>
                                     </ul>
                                   </div>
                                   <a
