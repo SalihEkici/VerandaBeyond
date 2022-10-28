@@ -281,7 +281,7 @@ nodeListImages.forEach((image) => {
                                     </ul>
                                   </div>
                                   <a
-                                  href="assets/englishForms/verandaForm.html"
+                                  href="assets/dutchForms/verandaFormDutch.html"
                                   class="main-btn mb-10 mt-50"
                                   >
                                   Vraag offerte aan
@@ -309,7 +309,7 @@ nodeListImages.forEach((image) => {
                                     </div>
                                   
                                 <a
-                                  href="assets/englishForms/verandaForm.html"
+                                  href="assets/dutchForms/verandaFormDutch.html"
                                   class="main-btn mb-10"
                                 >
                                   Vraag offerte aan
@@ -347,7 +347,7 @@ nodeListImages.forEach((image) => {
                                       </ul>
                                     </div>
                                     <a
-                                    href="assets/englishForms/verandaForm.html"
+                                    href="assets/dutchForms/carportFormDutch.html"
                                     class="main-btn mb-10 mt-50"
                                     >
                                     Vraag offerte aan
@@ -384,7 +384,7 @@ nodeListImages.forEach((image) => {
                                     </ul>
                                   </div>
                                   <a
-                                        href="assets/englishForms/verandaForm.html"
+                                        href="assets/dutchForms/carportFormDutch.html"
                                         class="main-btn mb-10"
                                       >
                                       Vraag offerte aan
@@ -425,7 +425,7 @@ nodeListImages.forEach((image) => {
                               </ul>
                             </div>
                               <a
-                                    href="assets/englishForms/verandaForm.html"
+                                    href="assets/dutchForms/glassSystemFormDutch.html"
                                     class="main-btn mb-10"
                                   >
                                     Get a quote
@@ -454,7 +454,7 @@ nodeListImages.forEach((image) => {
                               </ul>
                             </div>
                               <a
-                                    href="assets/englishForms/verandaForm.html"
+                                    href="assets/dutchForms/sunRoofFormDutch.html"
                                     class="main-btn mb-10"
                                   >
                                     Get a quote

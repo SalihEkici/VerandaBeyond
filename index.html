@@ -64,31 +64,16 @@
     <!--====== HEADER PART START ======-->
 
     <header class="header-area">
-      <!--===== equipment detail modal ====-->
-      <div class="modal">
-        <div
-          id="modalBox"
-          class="col-12 d-flex flex-row flex-wrap justify-content-around"
-        ></div>
-        <div class="closeModal">+</div>
-      </div>
-
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
               <div
-                class="col-12 d-flex flex-row flex-md-column justify-content-center align-items-center mx-auto"
+                class="col-md-9 d-flex flex-row flex-md-column justify-content-center align-items-center mx-auto"
               >
-                <div
-                  class="col-12 d-flex flex-row justify-content-between align-items-center"
-                >
-                  <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo" alt="Logo"/>
-                  </a>
-                  <a href="#contact" class="main-btn d-none d-md-block">Get a free quote</a
-                  >
-                </div>
+                <a class="navbar-brand col-md-3" href="index.html">
+                  <img src="assets/images/logo" alt="Logo" id="logo" />
+                </a>
                 <!-- Logo -->
                 <button
                   class="navbar-toggler"
@@ -133,13 +118,13 @@
                     </li>
                     <li class="nav-item">
                       <div>
-                        <a data-scroll-nav="0" href="nl.html"
+                        <a data-scroll-nav="0" href="index.html"
                           ><img
                             src="assets/images/flags/nlflag.png"
                             alt="dutch"
                         /></a>
                         |
-                        <a data-scroll-nav="0" href="index.html"
+                        <a data-scroll-nav="0" href="en.html"
                           ><img
                             src="assets/images/flags/gbflag.png"
                             alt="english"
@@ -160,6 +145,14 @@
     </header>
 
     <!--====== HEADER PART ENDS ======-->
+    <!--===== equipment detail modal ====-->
+    <div class="modal">
+      <div
+        id="modalBox"
+        class="col-12 d-flex flex-row flex-wrap justify-content-around"
+      ></div>
+      <div class="closeModal">+</div>
+    </div>
 
     <section id="home" class="slider-area pt-100 mt-50">
       <div class="container-fluid position-relative">
@@ -181,69 +174,26 @@
                       data-delay="0.3s"
                     >
                       <span>Veranda</span>
-                      and
-                      <span>Carport</span>
                     </h1>
                     <p
                       class="mb-25"
                       data-animation="fadeInUp"
                       data-delay="0.9s"
                     >
-                      If you wish to sit in a car which hasn't been under the
-                      sun or sit outside under the rain without getting wet,
-                      welcome to the right place!
-                      <strong>Check out our products!</strong>
+                      Enjoy sitting outside no matter the weather!
+                      <br />
+                      <strong>Polycarbonate top</strong>: Starting from
+                      <strong class="h1">795,-€</strong>
+                      <br />
+                      <strong>Glass top</strong>: Starting from
+                      <strong class="h1">1110,-€</strong>
                     </p>
                     <a
                       class="main-btn"
-                      href="#product"
+                      href="/assets/dutchForms/verandaFormDutch.html"
                       data-animation="fadeInUp"
                       data-delay="1.5s"
-                      >Explore Products <i class="lni-chevron-right"></i
-                    ></a>
-                  </div>
-                  <!-- slider product content -->
-                </div>
-              </div>
-              <!-- row -->
-            </div>
-            <!-- container -->
-          </div>
-          <!-- single slider -->
-
-          <div class="single-slider">
-            <div class="slider-bg">
-              <div class="row no-gutters align-items-center">
-                <div class="col-lg-4 col-md-5">
-                  <div class="slider-product-image d-none d-md-block">
-                    <img src="assets/images/slider/3.jpg" alt="Slider" />
-                  </div>
-                  <!-- slider product image -->
-                </div>
-                <div class="col-lg-8 col-md-7">
-                  <div class="slider-product-content">
-                    <h6
-                      class="slider-title mb-10"
-                      data-animation="fadeInUp"
-                      data-delay="0.3s"
-                    >
-                      <span>We</span> are here to <span> serve</span>
-                    </h6>
-                    <p
-                      class="mb-25"
-                      data-animation="fadeInUp"
-                      data-delay="0.9s"
-                    >
-                      Ask a question or ask for a free quotation. <br />
-                      We will reply to you as soon as possible with the
-                      requested information!
-                    </p>
-                    <a
-                      class="main-btn"
-                      href="#service"
-                      data-animation="fadeInUp"
-                      data-delay="1.5s"
-                      >See Our Services<i class="lni-chevron-right"></i
+                      >Request a veranda quote <i class="lni-chevron-right"></i
                     ></a>
                   </div>
                   <!-- slider product content -->
@@ -266,29 +216,79 @@
                 </div>
                 <div class="col-lg-8 col-md-7">
                   <div class="slider-product-content">
+                    <h6
+                      class="slider-title mb-10"
+                      data-animation="fadeInUp"
+                      data-delay="0.3s"
+                    >
+                      <span>Carport</span>
+                    </h6>
+                    <p
+                      class="mb-25"
+                      data-animation="fadeInUp"
+                      data-delay="0.9s"
+                    >
+                      Need an extra place to store your vehicles?
+                      <br />
+                      <strong>Polycarbonate Carport: </strong> Starting from
+                      <strong class="h1">1105,-€</strong>
+                      <br />
+                      <strong>Glass Top Carport: </strong> Starting from
+                      <strong class="h1">1547,-€</strong>
+                    </p>
+                    <a
+                      class="main-btn"
+                      href="/assets/dutchForms/carportFormDutch.html"
+                      data-animation="fadeInUp"
+                      data-delay="1.5s"
+                      >Request a carport quote<i class="lni-chevron-right"></i
+                    ></a>
+                  </div>
+                  <!-- slider product content -->
+                </div>
+              </div>
+              <!-- row -->
+            </div>
+            <!-- container -->
+          </div>
+          <!-- single slider -->
+
+          <div class="single-slider">
+            <div class="slider-bg">
+              <div class="row no-gutters align-items-center">
+                <div class="col-lg-4 col-md-5">
+                  <div class="slider-product-image d-none d-md-block">
+                    <img src="assets/images/slider/3.jpg" alt="Slider" />
+                  </div>
+                  <!-- slider product image -->
+                </div>
+                <div class="col-lg-8 col-md-7">
+                  <div class="slider-product-content">
                     <h1
                       class="slider-title mb-10"
                       data-animation="fadeInUp"
                       data-delay="0.3s"
                     >
-                      <span>Get</span> a Free <span>Quote</span>
+                      <span>Glass System</span>
                     </h1>
                     <p
                       class="mb-25"
                       data-animation="fadeInUp"
                       data-delay="0.9s"
                     >
-                      After customizing your very own product, fill in the
-                      required information in the contact form below to receive
-                      a <strong>free quotation!</strong>
+                      Sliding glass systems with high quality tempered glass.
+                      <br />
+                      <strong>Glass system: </strong> Starting from
+                      <strong class="h1">250,-€</strong>
                     </p>
                     <p>
                       <a
                         class="main-btn"
-                        href="#contact"
+                        href="/assets/dutchForms/glassSystemFormDutch.html"
                         data-animation="fadeInUp"
                         data-delay="1.5s"
-                        >Contact Us <i class="lni-chevron-right"></i
+                        >Request glass system quote
+                        <i class="lni-chevron-right"></i
                       ></a>
                     </p>
                   </div>
@@ -329,7 +329,6 @@
       </div>
       <!-- container fluid -->
     </section>
-    <!--====== CONTACT PART START ======-->
     <!--====== PRODUCT PART START ======-->
 
     <section
@@ -370,7 +369,7 @@
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/englishForms/verandaForm.html"
+                    href="assets/dutchForms/verandaFormDutch.html"
                     class="main-btn mb-10"
                   >
                     Get a quote
@@ -396,7 +395,7 @@
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/englishForms/carportForm.html"
+                    href="assets/dutchForms/carportFormDutch.html"
                     class="main-btn mb-10"
                   >
                     Get a quote
@@ -421,7 +420,7 @@
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/englishForms/glassSystemForm.html"
+                    href="assets/dutchForms/glassSystemFormDutch.html"
                     class="main-btn mb-10"
                   >
                     Get a quote
@@ -446,7 +445,7 @@
                   class="card-body d-flex flex-column justify-content-center align-items-center"
                 >
                   <a
-                    href="assets/englishForms/sunRoofForm.html"
+                    href="assets/dutchForms/sunRoofFormDutch.html"
                     class="main-btn mb-10"
                   >
                     Get a quote
@@ -496,7 +495,7 @@
             <div class="services-left mt-45">
               <div class="services">
                 <img src="assets/images/services/services.jpg" alt="" />
-                <a href="#contact" class="main-btn mt-30"
+                <a href="#product" class="main-btn mt-30"
                   >Get a free quote<i class="lni-chevron-right"></i
                 ></a>
               </div>
@@ -608,115 +607,81 @@
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/glass1.jpg"
-                  alt="Showcase"
-                />
-                <button class="main-btn system-button noHover">Glass system</button>
+                <img src="assets/images/showcase/glass1.jpg" alt="Showcase" />
+                <button class="main-btn system-button noHover">
+                  Glass system
+                </button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/veranda2.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/veranda2.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Veranda</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/awning1.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/awning1.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Awning</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/carport2.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/carport2.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Carport</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/glass2.jpg"
-                  alt="Showcase"
-                />
-                <button class="main-btn system-button noHover">Glass system</button>
+                <img src="assets/images/showcase/glass2.jpg" alt="Showcase" />
+                <button class="main-btn system-button noHover">
+                  Glass system
+                </button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/awning2.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/awning2.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Awning</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/veranda3.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/veranda3.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Veranda</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/carport3.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/carport3.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Carport</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/carport1.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/carport1.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Veranda</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/glass3.jpg"
-                  alt="Showcase"
-                />
-                <button class="main-btn system-button noHover">Glass system</button>
+                <img src="assets/images/showcase/glass3.jpg" alt="Showcase" />
+                <button class="main-btn system-button noHover">
+                  Glass system
+                </button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/awning3.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/awning3.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Awning</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/carport4.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/carport4.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Carport</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/veranda4.jpg"
-                  alt="Showcase"
-                />
+                <img src="assets/images/showcase/veranda4.jpg" alt="Showcase" />
                 <button class="main-btn system-button noHover">Veranda</button>
               </div>
               <!-- single showcase -->
               <div class="single-showcase">
-                <img
-                  src="assets/images/showcase/glass4.jpg"
-                  alt="Showcase"
-                />
-                <button class="main-btn system-button noHover">Glass system</button>
+                <img src="assets/images/showcase/glass4.jpg" alt="Showcase" />
+                <button class="main-btn system-button noHover">
+                  Glass system
+                </button>
               </div>
             </div>
             <!-- showcase active -->
@@ -789,48 +754,7 @@
         <!-- row -->
         <div class="contact-box mt-70">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="contact-info pt-25">
-                <h4 class="info-title">Contact Info</h4>
-                <ul>
-                  <li>
-                    <div class="single-info mt-30">
-                      <div class="info-icon">
-                        <i class="lni-phone-handset"></i>
-                      </div>
-                      <div class="info-content">
-                        <p>fake number</p>
-                      </div>
-                    </div>
-                    <!-- single info -->
-                  </li>
-                  <li>
-                    <div class="single-info mt-30">
-                      <div class="info-icon">
-                        <i class="lni-envelope"></i>
-                      </div>
-                      <div class="info-content">
-                        <p>fakemail@fakemail</p>
-                      </div>
-                    </div>
-                    <!-- single info -->
-                  </li>
-                  <li>
-                    <div class="single-info mt-30">
-                      <div class="info-icon">
-                        <i class="lni-home"></i>
-                      </div>
-                      <div class="info-content">
-                        <p>fake address</p>
-                      </div>
-                    </div>
-                    <!-- single info -->
-                  </li>
-                </ul>
-              </div>
-              <!-- contact info -->
-            </div>
-            <div class="col-lg-8">
+            <div class="col-lg-12">
               <div class="contact-form">
                 <form
                   id="contact-form"
@@ -950,6 +874,9 @@
     </section>
 
     <!--====== FOOTER PART ENDS ======-->
+    <!--====== REQUEST QUOTE PART START ======-->
+    <button><a href="#product" class="request-quote">Request quote</a></button>
+    <!--====== REQUEST QUOTE PART END ======-->
 
     <!--====== BACK TO TOP PART START ======-->
 
@@ -977,6 +904,6 @@
     <script src="assets/js/jquery.nice-number.min.js"></script>
 
     <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/nlmain.js"></script>
   </body>
 </html>

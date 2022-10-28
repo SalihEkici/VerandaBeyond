@@ -1833,7 +1833,7 @@ p.form-message.error {
 }
 
 .modal {
-  z-index: 15;
+  z-index: 10000;
   background-color: rgba(0, 0, 0, 0.9);
   display: none;
   max-height: 100%;
@@ -1897,21 +1897,21 @@ p.form-message.error {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.noHover{
+.noHover {
   pointer-events: none;
 }
 
-#logo{
+#logo {
   max-width: 250px;
   height: auto;
 }
-.request-quote{
+.request-quote {
   position: fixed;
   bottom: 20px;
   left: 20px;
   font-size: 16px;
   line-height: 40px;
-  z-index: 1000;
+  z-index: 50;
   text-align: center;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(156, 156, 156, 0.25);
   -moz-box-shadow: 0px 0px 30px 0px rgba(156, 156, 156, 0.25);
