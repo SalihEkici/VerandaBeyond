@@ -259,7 +259,7 @@ nodeListImages.forEach((image) => {
       details.innerHTML = `
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
-                                src="assets/images/services/services.jpg"
+                                src="assets/images/showcase/poly-roof-veranda.jpg"
                                 alt="Card image cap"
                                 />
                                 <div class="card-body">
@@ -267,7 +267,6 @@ nodeListImages.forEach((image) => {
                                   <div class="card-text">
                                     <p >Polycarbonaatplaat is een zeer goed product om een hoogwaardig dakafwerking voor uw veranda te realiseren. Ook is het mogelijk om van deze polycarbonaat platen een spiestuk of een zijwand aan uw luifel te maken.</p>
                                     <ul class="p-3">
-
                                     <li> Verkrijgbaar in 3 kleuren (Antraciet, zwart en crème)</li>
                                   
                                     <li>Staanders in halfrond of vierkant</li>
@@ -291,7 +290,7 @@ nodeListImages.forEach((image) => {
                               
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
-                                src="assets/images/services/services.jpg"
+                                src="assets/images/showcase/glass-roof-veranda.jpg"
                                 alt="Card image cap"
                                 />
                                   <div class="card-body">
@@ -322,28 +321,27 @@ nodeListImages.forEach((image) => {
       details.innerHTML = `
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
-                                src="assets/images/services/services.jpg"
+                                src="assets/images/showcase/poly-roof-carport.jpg"
                                 alt="Card image cap"
                                 />
                                   <div class="card-body">
-                                    <h5 class="card-title">Polycarbonate Roof Carport</h5>
+                                    <h5 class="card-title">Polycarbonaat Dak Carport</h5>
                                     <div class="card-text">
                                       <p>
-                                      An aluminum car cover with a polycarbonate roof that has a very long lifespan, 
-                                      provides the best protection for you car and also requires little maintenance. 
-                                      In addition, an aluminum cover from Veranda &amp; Beyond also offers a beautiful appearance.
+                                      Een aluminium autohoes met een polycarbonaat dak dat een zeer lange levensduur heeft, 
+                                      biedt de beste bescherming voor uw auto en vergt bovendien weinig onderhoud. 
+                                      Daarnaast biedt een aluminium overkapping van Veranda &amp; Beyond ook een prachtige uitstraling.
                                       </p>
                                       <ul class="p-3">
-
-                                      <li> Available in 3 colors (Antraciet, black and cream)</li>
+                                      <li> Verkrijgbaar in 3 kleuren (antraciet, zwart en crème)</li>
                                     
-                                      <li> Roofing polycarbonate clear or opaque</li>
+                                      <li> Dakbedekking polycarbonaat helder of ondoorzichtig</li>
                                     
-                                      <li> Round or straight model gutters</li>
+                                      <li> Ronde of rechte model goten</li>
                                     
-                                      <li> Lighting LED spotlight set</li>
+                                      <li> Verlichting LED-spotset</li>
                                       
-                                      <li> 10-year warranty on profile and color accuracy</li>
+                                      <li> 10 jaar garantie op profiel en kleurnauwkeurigheid</li>
                                       </ul>
                                     </div>
                                     <a
@@ -355,32 +353,27 @@ nodeListImages.forEach((image) => {
                                   </div>
                                 </div>
                               </div>
-
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
-                                src="assets/images/services/services.jpg"
+                                src="assets/images/showcase/glass-roof-carport.jpg"
                                 alt="Card image cap"
                                 />
                                   <div class="card-body">
-                                  <h5 class="card-title">Glass Roof Carport</h5>
+                                  <h5 class="card-title">Glazen Dak Carport</h5>
                                   <div class="card-text">
-                                    <p >Would you prefer a glass carport? That is also possible at Valk &amp; Beyond.</p>
+                                    <p >Wilt u liever een glazen carport? Ook dat is mogelijk bij Veranda &amp; Beyond.</p>
                                     <ul class="p-3">
-
-                                    <li>Available in 3 colors (Antraciet, black and cream)</li>
-
-                                    <li> Roof covering 44.2 laminated safety glass</li>
-
-                                    <li> Lengths possible up to 400cm</li>
+                                    <li> Verkrijgbaar in 3 kleuren (antraciet, zwart en crème)</li>
+                                    <li> Dakbedekking 44.2 gelaagd veiligheidsglas</li>
+                                    <li> Lengtes mogelijk tot 400cm</li>
                                   
-                                    <li> Round or straight model gutters</li>
-
-                                    <li> U-profiles, with draught strips</li>
+                                    <li> Ronde of rechte model goten</li>
+                                    <li> U-profielen, met tochtstroken</li>
                                     
-                                    <li> Lighting LED spotlight set</li>
+                                    <li> Verlichting LED-spotset</li>
                                     
                                   
-                                    <li>10-year warranty on profile and color accuracy</li>
+                                    <li> 10 jaar garantie op profiel en kleurnauwkeurigheid</li>
                                     </ul>
                                   </div>
                                   <a
@@ -394,62 +387,57 @@ nodeListImages.forEach((image) => {
                           
       `;
     } else if (image.id == "slidingGlassDoors") {
-      details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
+      details.innerHTML = `<div class="card col-10 col-lg-4 p-0 mt-30">
                             <img 
-                            src="assets/images/services/services.jpg"
+                            src="assets/images/showcase/glass3.jpg"
                             alt="Card image cap"
                             />
                             <div class="card-body">
-                            <h5 class="card-title">Sliding Glass Doors</h5>
+                            <h5 class="card-title">Glazen schuifdeuren</h5>
                             <div class="card-text">
-                              <p >The hard glass panels run on wheels with bearings and are equipped with carriers that automatically pull the panels along when closing. The glass panels run on a narrow bottom profile, which consists of up to 6 tracks, depending on the number of panels required. You can choose a wall that closes on the left, right or in the middle.
-                              According to the dimensions of the glass panels, they are supplied in 10 mm ESG safety glass.
+                              <p >De hardglaspanelen lopen op gelagerde wielen en zijn voorzien van meenemers die de panelen bij het sluiten automatisch meetrekken. De glaspanelen lopen op een smal bodemprofiel, dat bestaat uit maximaal 6 sporen, afhankelijk van het aantal benodigde panelen. U kunt kiezen voor een wand die links, rechts of in het midden sluit.
+                              Volgens de afmetingen van de glaspanelen worden ze geleverd in 10 mm ESG veiligheidsglas..
                               
-                              The aluminum profiles are powder coated. You have a choice of two standard colors: cream-white and anthracite.</p>
+                              De aluminium profielen zijn gepoedercoat. U kunt kiezen uit twee standaardkleuren: roomwit en antraciet.</p>
                               <ul class="p-3">
-
-                              <li> Extremely compact and strong aluminum profile</li>
-
-                              <li> Uninsulated</li>
-
-                              <li> With colored draught strip and fasteners</li>
+                              <li> Uiterst compact en sterk aluminium profiel</li>
+                              <li> Ongeïsoleerd</li>
+                              <li> Met gekleurde tochtstrook en sluitingen</li>
                             
-                              <li> 10 mm tempered safety glass</li>
-
-                              <li> Rain and wind proof</li>
+                              <li> 10 mm gehard veiligheidsglas</li>
+                              <li> Regen- en windbestendig</li>
                               
-                              <li> Aluminium strong bottom rail, 2 cm high</li>
+                              <li> Aluminium sterke bodemrail, 2 cm hoog</li>
                               
                             
-                              <li>10-year warranty on profile and color accuracy</li>
+                              <li>10 jaar garantie op profiel en kleurnauwkeurigheid</li>
                               </ul>
                             </div>
                               <a
                                     href="assets/dutchForms/glassSystemFormDutch.html"
                                     class="main-btn mb-10"
                                   >
-                                    Get a quote
+                                  Vraag offerte aan
                                   </a>
                               </div>
                             </div>`;
     } else if (image.id == "awnings") {
       details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
                             <img 
-                            src="assets/images/services/services.jpg"
+                            src="assets/images/showcase/awning3.jpg"
                             alt="Card image cap"
                             />
                             <div class="card-body">
-                            <h5 class="card-title">Awnings</h5>
+                            <h5 class="card-title">Zonneschermen</h5>
                             <div class="card-text">
-                              <p >We only work with materials of the best quality. Vernda &amp; Beyond supplies awnings that you can enjoy for many years. We guarantee excellent service and a high degree of customer friendliness. Only when you are satisfied, we are satisfied. Applied above the glass, the fabric is equipped with a protective finish.
-
-                              The awning fabric is available in both antraciet and cream.</p>
+                              <p >Wij werken alleen met materialen van de beste kwaliteit. Vernda &amp; Beyond levert zonweringen waar u jarenlang van kunt genieten. Wij staan garant voor een uitstekende service en een hoge mate van klantvriendelijkheid. Pas als u tevreden bent, zijn wij tevreden. Aangebracht boven het glas is het doek voorzien van een beschermende afwerking.
+                              Het zonweringdoek is verkrijgbaar in zowel antraciet als crème.</p>
                               <ul class="p-3">
-                                <li> Top quality</li>
-                                <li> Very high quality fabric</li>
-                                <li> Free of charge customization</li>
-                                <li> Motor: Somfy LTS with remote control</li>
-                                <li> Only available for mounting above the canopy</li>
+                                <li> Topkwaliteit</li>
+                                <li> Zeer hoogwaardige stof</li>
+                                <li> Gratis maatwerk</li>
+                                <li> Motor: Somfy LTS met afstandsbediening</li>
+                                <li> Alleen besWaterafstotendchikbaar voor montage boven de luifel</li>
                                 <li> Water repellent</li>
                               </ul>
                             </div>
@@ -457,7 +445,7 @@ nodeListImages.forEach((image) => {
                                     href="assets/dutchForms/sunRoofFormDutch.html"
                                     class="main-btn mb-10"
                                   >
-                                    Get a quote
+                                  Vraag offerte aan
                                   </a>
                               </div>
                             </div>`;

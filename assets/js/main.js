@@ -266,7 +266,6 @@ nodeListImages.forEach((image) => {
                                   <div class="card-text">
                                     <p>Polycarbonate sheets are very good products to create a high-quality roof for your veranda. It is also possible to use these sheets to close off any openings you request.</p>
                                     <ul class="p-3">
-
                                     <li>Available in 3 colors (Antraciet, black and cream)</li>
                                   
                                     <li>Polycarbonate sheets can be clear or opaque</li>
@@ -346,7 +345,6 @@ nodeListImages.forEach((image) => {
                                   </div>
                                 </div>
                               </div>
-
                               <div class="card col-10 col-lg-5 p-0 mt-30">
                                 <img 
                                 src="assets/images/showcase/glass-roof-carport.jpg"
@@ -376,7 +374,7 @@ nodeListImages.forEach((image) => {
                           
       `;
     } else if (image.id == "slidingGlassDoors") {
-      details.innerHTML = `<div class="card col-10 col-lg-5 p-0 mt-30">
+      details.innerHTML = `<div class="card col-10 col-lg-4 p-0 mt-30">
                             <img 
                             src="assets/images/showcase/glass3.jpg"
                             alt="Card image cap"
@@ -389,15 +387,11 @@ nodeListImages.forEach((image) => {
                               
                               The aluminum profiles are powder coated. You have a choice of two standard colors: cream-white and anthracite.</p>
                               <ul class="p-3">
-
                               <li> Extremely compact and strong aluminum profile</li>
-
                               <li> Uninsulated</li>
-
                               <li> With colored draught strip and fasteners</li>
                             
                               <li> 10 mm tempered safety glass</li>
-
                               <li> Rain and wind proof</li>
                               
                               <li> Aluminium strong bottom rail, 2 cm high</li>
@@ -424,7 +418,6 @@ nodeListImages.forEach((image) => {
                             <h5 class="card-title">Awnings</h5>
                             <div class="card-text">
                               <p >We only work with materials of the best quality. Vernda &amp; Beyond supplies awnings that you can enjoy for many years. We guarantee excellent service and a high degree of customer friendliness. Only when you are satisfied, we are satisfied. Applied above the glass, the fabric is equipped with a protective finish.
-
                               The awning fabric is available in both antraciet and cream.</p>
                               <ul class="p-3">
                                 <li> Top quality</li>
