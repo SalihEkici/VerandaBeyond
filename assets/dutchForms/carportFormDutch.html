@@ -67,7 +67,7 @@
             <nav
               class="navbar navbar-expand-lg d-flex flex-row justify-content-between"
             >
-              <a class="navbar-brand" href="../../en.html">
+              <a class="navbar-brand" href="../../index.html">
                 <img
                   src="../../assets/images/logo.png"
                   alt="Logo"
@@ -94,6 +94,7 @@
             action="https://formsubmit.co/70f5cb8074bdf41e3079d5ef1caceb6a"
             method="post"
             data-toggle="validator"
+            enctype="multipart/form-data"
           >
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
@@ -115,15 +116,32 @@
                   aria-labelledby="headingDimensions"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <p>
-                      <label for="width">Breedte:</label>
-                      <input type="text" name="width" required class="w-100" />
-                    </p>
-                    <p>
-                      <label for="depth">Diepte:</label>
-                      <input type="text" name="Depth" required class="w-100" />
-                    </p>
+                  <div
+                    class="accordion-body collapsed d-flex flex-lg-row flex-column justify-content-between align-items-center"
+                  >
+                    <div class="col-12 col-lg-6 p-3 o-2">
+                      <p class="p-lg-3">
+                        <label for="Length">Diepte:</label>
+                        <input
+                          type="text"
+                          name="Length"
+                          placeholder="250cm"
+                          class="w-100"
+                        />
+                      </p>
+                      <p class="p-lg-3 o-2">
+                        <label for="width">Breedte:</label>
+                        <input
+                          type="text"
+                          name="width"
+                          placeholder="250cm"
+                          class="w-100"
+                        />
+                      </p>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">
+                      <img src="../images/depth.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -481,20 +499,39 @@
               </div>
             </div>
             <div
-              class="d-flex flex-column flex-md-row justify-content-between pt-100"
+              class="d-flex flex-column flex-md-row justify-content-between pt-3"
             >
               <div>
-                <h3>Extra notities:</h3>
-                <span class="wpcf7-form-control-wrap" data-name="your-message">
-                  <textarea
-                    name="your-message"
-                    cols="5"
-                    rows="3"
-                    class="wpcf7-form-control wpcf7-textarea"
-                    aria-invalid="false"
-                    style="width: 333px; height: 114px"
-                  ></textarea>
-                </span>
+                <div>
+                  <h3>Extra notities:</h3>
+                  <span
+                    class="wpcf7-form-control-wrap"
+                    data-name="your-message"
+                  >
+                    <textarea
+                      name="your-message"
+                      cols="5"
+                      rows="3"
+                      class="wpcf7-form-control wpcf7-textarea"
+                      aria-invalid="false"
+                      style="width: 333px; height: 114px"
+                    ></textarea>
+                  </span>
+                </div>
+                <div class="pt-3 pb-3">
+                  <input
+                    type="file"
+                    name="attachment"
+                    id="attachment"
+                    accept="image/png, image/jpeg"
+                  />
+                  <p>
+                    <small
+                      >Upload een foto van het terrein waar u de carport wilt
+                      hebben.</small
+                    >
+                  </p>
+                </div>
               </div>
               <input class="main-btn mt-20 align-self-center" type="submit" />
             </div>
