@@ -430,14 +430,14 @@ nodeListImages.forEach((image) => {
                             <div class="card-body">
                             <h5 class="card-title">Zonneschermen</h5>
                             <div class="card-text">
-                              <p >Wij werken alleen met materialen van de beste kwaliteit. Vernda &amp; Beyond levert zonweringen waar u jarenlang van kunt genieten. Wij staan garant voor een uitstekende service en een hoge mate van klantvriendelijkheid. Pas als u tevreden bent, zijn wij tevreden. Aangebracht boven het glas is het doek voorzien van een beschermende afwerking.
+                              <p >Wij werken alleen met materialen van de beste kwaliteit. Veranda &amp; Beyond levert zonweringen waar u jarenlang van kunt genieten. Wij staan garant voor een uitstekende service en een hoge mate van klantvriendelijkheid. Pas als u tevreden bent, zijn wij tevreden. Aangebracht boven het glas is het doek voorzien van een beschermende afwerking.
                               Het zonweringdoek is verkrijgbaar in zowel antraciet als crème.</p>
                               <ul class="p-3">
                                 <li> Topkwaliteit</li>
                                 <li> Zeer hoogwaardige stof</li>
                                 <li> Gratis maatwerk</li>
                                 <li> Motor: Somfy LTS met afstandsbediening</li>
-                                <li> Alleen besWaterafstotendchikbaar voor montage boven de luifel</li>
+                                <li> Alleen beschikbaar voor montage boven de luifel</li>
                                 <li> Water repellent</li>
                               </ul>
                             </div>
