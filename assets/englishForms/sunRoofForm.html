@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <!--====== Required meta tags ======-->
     <meta charset="utf-8" />
@@ -50,6 +50,7 @@
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="../../assets/css/responsive.css" />
   </head>
+
   <body>
     <!--====== PRELOADER PART START ======-->
 
@@ -60,6 +61,10 @@
       </div>
     </div>
 
+    <!--====== PRELOADER PART START ======-->
+
+    <!--====== HEADER PART START ======-->
+
     <header class="header-area">
       <div class="container">
         <div class="row">
@@ -67,7 +72,7 @@
             <nav
               class="navbar navbar-expand-lg d-flex flex-row justify-content-between"
             >
-              <a class="navbar-brand" href="../../en.html">
+              <a class="navbar-brand" href="../../index.html">
                 <img
                   src="../../assets/images/logo.png"
                   alt="Logo"
@@ -75,7 +80,9 @@
                 />
               </a>
               <!-- Logo -->
-              <button class="main-btn" onclick="history.back()">Go Back</button>
+              <button class="main-btn" onclick="history.back()">
+                Ga terug
+              </button>
             </nav>
             <!-- navbar -->
           </div>
@@ -85,291 +92,402 @@
       <!-- container -->
     </header>
 
-    <!--====== HEADER PART ENDS ======-->
-    <div class="container pt-150">
-      <div class="col-12 col-lg-12">
-        <div class="contact-form">
-          <form
-            id="contact-form"
-            action="https://formsubmit.co/9da5500386dcb89cc2e83a988c846328"
-            method="post"
-            data-toggle="validator"
-            enctype="multipart/form-data"
+    <!--FORM START POINT-->
+
+    <div class="container mt-20">
+      <h1>Maak uw Veranda</h1>
+      <div id="multi-step-form-container">
+        <!-- Form Steps / Progress Bar -->
+        <ul
+          class="form-stepper form-stepper-horizontal text-center mx-auto pl-0"
+        >
+          <!-- Step 1 -->
+          <li
+            class="form-stepper-active text-center form-stepper-list"
+            step="1"
           >
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAwningDimension">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseAwningDimension"
-                    aria-expanded="true"
-                    aria-controls="collapseAwningDimension"
-                  >
-                    Awning Dimensions
-                  </button>
-                </h2>
-                <div
-                  id="collapseAwningDimension"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingAwningDimension"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div class="accordion-body collapsed d-flex flex-column">
-                      <p>
-                        <label for="Length">Length:</label>
-                        <input
-                          type="text"
-                          name="Length"
-                          placeholder="250cm"
-                          class="w-100"
-                        />
-                      </p>
-                      <p>
-                        <label for="width">Width:</label>
-                        <input
-                          type="text"
-                          name="width"
-                          placeholder="250cm"
-                          class="w-100"
-                        />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingColor">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseColor"
-                    aria-expanded="false"
-                    aria-controls="collapseColor"
-                  >
-                    Awning Color
-                  </button>
-                </h2>
-                <div
-                  id="collapseColor"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingColor"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body text-center">
-                    <select name="color" id="color" class="w-50" required>
-                      <option value="black">Black (RAL9005)</option>
-                      <option value="antraciet">Antraciet (RAL7016)</option>
-                      <option value="cream">Cream (RAL9001)</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingInstallation">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseInstallation"
-                    aria-expanded="false"
-                    aria-controls="collapseInstallation"
-                  >
-                    Including Installation
-                  </button>
-                </h2>
-                <div
-                  id="collapseInstallation"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingInstallation"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body text-center">
-                    <select name="Installation" class="w-75" required>
-                      <option value="yes">Yes</option>
-                      <option value="no">No</option>
-                    </select>
-                    <p>
-                      <small
-                        >If no is selected, the Installation will be done by the
-                        customer</small
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingDelivery">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseDelivery"
-                    aria-expanded="false"
-                    aria-controls="collapseDelivery"
-                  >
-                    Including Delivery
-                  </button>
-                </h2>
-                <div
-                  id="collapseDelivery"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingDelivery"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body text-center">
-                    <select name="Delivery" class="w-75" required>
-                      <option value="yes">Yes (2€ per km)</option>
-                      <option value="no">Pickup</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingcontactInfo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsecontactInfo"
-                    aria-expanded="false"
-                    aria-controls="collapsecontactInfo"
-                  >
-                    Contact Info
-                  </button>
-                </h2>
-                <div
-                  id="collapsecontactInfo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingcontactInfo,"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div class="d-flex flex-column justify-content-around">
-                      <p class="mb-10">
-                        <label for="firstName">First Name:</label>
-                        <input
-                          type="text"
-                          name="firstName"
-                          id="firstName"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="lastName">Last Name:</label>
-                        <input
-                          type="text"
-                          name="lastName"
-                          id="lastName"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="email">E-Mail:</label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="phone">Phone Number:</label>
-                        <input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          placeholder="Inclusief landcode (bijv. +32)"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="postcode">Postcode:</label>
-                        <input
-                          type="text"
-                          name="postcode"
-                          id="postcode"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="city">City:</label>
-                        <input
-                          type="text"
-                          name="city"
-                          id="city"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="street">Street:</label>
-                        <input
-                          type="text"
-                          name="street"
-                          id="street"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="housenumber">House number:</label>
-                        <input
-                          type="text"
-                          name="housenumber"
-                          id="housenumber"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="d-flex flex-column flex-md-row justify-content-between pt-100"
-              >
-                <div>
-                  <div>
-                    <h3>Extra notes:</h3>
-                    <span
-                      class="wpcf7-form-control-wrap"
-                      data-name="your-message"
-                    >
-                      <textarea
-                        name="your-message"
-                        cols="5"
-                        rows="3"
-                        class="wpcf7-form-control wpcf7-textarea"
-                        aria-invalid="false"
-                        style="width: 333px; height: 114px"
-                      ></textarea>
-                    </span>
-                  </div>
-                  <div class="pt-3 pb-3">
-                    <input
-                      type="file"
-                      name="attachment"
-                      accept="image/png, image/jpeg"
-                    />
-                    <p>
-                      <small>Upload a photo of your porch.</small>
-                    </p>
-                  </div>
-                </div>
-                <input class="main-btn mt-20 align-self-center" type="submit" />
+            <a class="mx-2">
+              <span class="form-stepper-circle">
+                <span>1</span>
+              </span>
+              <div class="label">Dimensions</div>
+            </a>
+          </li>
+          <!-- Step 2 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="2"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>2</span>
+              </span>
+              <div class="label text-muted">Frame Color</div>
+            </a>
+          </li>
+          <!-- Step 3 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="3"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>3</span>
+              </span>
+              <div class="label text-muted">Cloth Color</div>
+            </a>
+          </li>
+          <!-- Step 4 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="4"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>4</span>
+              </span>
+              <div class="label text-muted">Installation</div>
+            </a>
+          </li>
+          <!-- Step 3 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="3"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>3</span>
+              </span>
+              <div class="label text-muted">Shipping</div>
+            </a>
+          </li>
+        </ul>
+        <!-- Step Wise Form Content -->
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/9da5500386dcb89cc2e83a988c846328"
+          method="post"
+          data-toggle="validator"
+          enctype="multipart/form-data"
+        >
+          <label for="FormType" hidden>ZonweringForm</label>
+          <input
+            type="hidden"
+            id="FormType"
+            name="FormType"
+            value="ZonweringForm"
+          />
+          <!-- Step 1 Content -->
+          <section id="step-1" class="form-step">
+            <h2 class="font-normal">Afmetingen</h2>
+            <!-- Step 1 input fields -->
+            <div class="mt-3">
+              <div class="d-flex flex-column">
+                <p>Enter the depth of your current veranda.</p>
+                <p>
+                  <label for="Diepte">Depth:</label>
+                  <input
+                    type="text"
+                    name="Diepte"
+                    placeholder="250cm"
+                    class="w-100"
+                  />
+                </p>
+                <p>Enter the width of your current veranda.</p>
+                <p>
+                  <label for="Breedte">Width:</label>
+                  <input
+                    type="text"
+                    name="Breedte"
+                    placeholder="250cm"
+                    class="w-100"
+                  />
+                </p>
               </div>
             </div>
-          </form>
-        </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="2"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 2 Content, default hidden on page load. -->
+          <section id="step-2" class="form-step d-none">
+            <h2 class="font-normal">Frame Color</h2>
+            <!-- Step 2 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img src="../images/form-images/zonwering-zwart.jpg" alt="" />
+                  <div>
+                    <input type="radio" name="Kleur" value="Zwart (RAL9005)" />
+                    <label for="Black">Black (RAL9005)</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/zonwering-antraciet.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Kleur"
+                      value="Antraciet (RAL7016)"
+                    />
+                    <label for="Antraciet">Anthraciet (RAL7016)</label>
+                  </div>
+                </div>
+                <div>
+                  <img src="../images/form-images/zonwering-creme.jpg" alt="" />
+                  <div>
+                    <input type="radio" name="Kleur" value="Cream (RAL9001)" />
+                    <label for="Crème">Crème (RAL9001)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="1"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="3"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 3 Content, default hidden on page load. -->
+          <section id="step-3" class="form-step d-none">
+            <h2 class="font-normal">Cloth Color</h2>
+            <!-- Step 2 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img
+                    src="../images/form-images/zonwering-doek-zilvergrijs.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="KleurDoek" value="Zilvergrijs" />
+                    <label for="KleurDoek">Silver gray</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/zonwering-doek-antraciet.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="KleurDoek"
+                      value="Antraciet (RAL7016)"
+                    />
+                    <label for="KleurDoek">Anthraciet</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/zonwering-doek-creme.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="KleurDoek"
+                      value="Crème (RAL9001)"
+                    />
+                    <label for="KleurDoek">Crème</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="2"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="4"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 4 Content, default hidden on page load. -->
+          <section id="step-4" class="form-step d-none">
+            <h2 class="font-normal">installation</h2>
+            <!-- Step 4 input fields -->
+            <div class="mt-3">
+              <p>Incl. Montage</p>
+              <select name="montage" id="montage" class="w-25 text-center">
+                <option value="Ja">Yes</option>
+                <option value="Nee">No</option>
+              </select>
+
+              <p>Delivery or pick up yourself</p>
+              <select name="Delivery" class="w-75" required>
+                <option value="Ja">Ses (2€ per kilometer)</option>
+                <option value="Nee">Self Pickup</option>
+              </select>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="3"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="5"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 5 Content, default hidden on page load. -->
+          <section id="step-5" class="form-step d-none">
+            <h2 class="font-normal">Submit</h2>
+            <!-- Step 5 input fields -->
+            <div class="mt-3">
+              <div class="d-flex flex-column justify-content-around">
+                <p class="mb-10">
+                  <label for="firstName">Full name:</label>
+                  <input
+                    type="text"
+                    name="VolledigeNaam"
+                    id="VolledigeNaam"
+                    class="w-100"
+                    required
+                  />
+                </p>
+
+                <p class="mb-10">
+                  <label for="straatNaam">Street:</label>
+                  <input
+                    type="text"
+                    name="straatNaam"
+                    id="straatNaam"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="HuisNummer">House number:</label>
+                  <input
+                    type="text"
+                    name="HuisNummer"
+                    id="HuisNummer"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="postcode">Postcode:</label>
+                  <input
+                    type="text"
+                    name="Postcode"
+                    id="Postcode"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="Woonplaats">City:</label>
+                  <input
+                    type="text"
+                    name="Woonplaats"
+                    id="Woonplaats"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="email">E-Mail:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="Telefoonnummer">Cellphone Number:</label>
+                  <input
+                    type="tel"
+                    name="Telefoonnummer"
+                    id="Telefoonnummer"
+                    placeholder="Including landcode(ex. +32)"
+                    class="w-100"
+                    required
+                  />
+                </p>
+              </div>
+              <div>
+                <div>
+                  <h3>Extra Notes:</h3>
+                  <span class="wpcf7-form-control-wrap" data-name="Opmerking">
+                    <textarea
+                      name="Opmerking"
+                      cols="5"
+                      rows="3"
+                      class="wpcf7-form-control wpcf7-textarea"
+                      aria-invalid="false"
+                      style="width: 333px; height: 114px"
+                    ></textarea>
+                  </span>
+                </div>
+                <div class="pt-3 pb-3">
+                  <input
+                    type="file"
+                    name="attachment"
+                    id="attachment"
+                    accept="image/png, image/jpeg"
+                  />
+
+                  <p>
+                    <small> Upload a picture of your current veranda.</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="4"
+              >
+                Previous
+              </button>
+              <button class="button submit-btn" type="submit">Submit</button>
+            </div>
+          </section>
+        </form>
       </div>
     </div>
 
@@ -382,10 +500,10 @@
             <div class="col-lg-3 col-md-5 col-sm-7 text-center">
               <div class="footer-logo mt-40">
                 <a href="#" class="mx-auto">
-                  <img src="../images/logo.png" alt="Logo" />
+                  <img src="../../assets/images/logo.png" alt="Logo" />
                 </a>
                 <ul class="footer-social mt-25">
-                  <li>Company Number: 0795.573.610</li>
+                  <li>Ondernemingsnummer: 0795.573.610</li>
                   <li>
                     <a href="https://www.instagram.com/verandabeyond.be/"
                       ><i class="lni-instagram"></i
@@ -402,7 +520,7 @@
               <!-- footer logo -->
             </div>
             <div>
-              <a href="../../privacyPolicyEn.html">Privacy verklaring</a>
+              <a href="privacyPolicyNL.html">Privacy verklaring</a>
             </div>
           </div>
           <!-- row -->
@@ -411,8 +529,9 @@
       </div>
       <!-- container -->
     </section>
+    <!-- COOKIES-->
 
-    <!--====== FOOTER PART ENDS ======-->
+    <!--====== REQUEST QUOTE PART END ======-->
 
     <!--====== BACK TO TOP PART START ======-->
 
@@ -420,6 +539,102 @@
 
     <!--====== BACK TO TOP PART ENDS ======-->
 
+    <!--form js-->
+    <script>
+      /**
+       * Define a function to navigate betweens form steps.
+       * It accepts one parameter. That is - step number.
+       */
+      const navigateToFormStep = (stepNumber) => {
+        /**
+         * Hide all form steps.
+         */
+        document.querySelectorAll(".form-step").forEach((formStepElement) => {
+          formStepElement.classList.add("d-none");
+        });
+        /**
+         * Mark all form steps as unfinished.
+         */
+        document
+          .querySelectorAll(".form-stepper-list")
+          .forEach((formStepHeader) => {
+            formStepHeader.classList.add("form-stepper-unfinished");
+            formStepHeader.classList.remove(
+              "form-stepper-active",
+              "form-stepper-completed"
+            );
+          });
+        /**
+         * Show the current form step (as passed to the function).
+         */
+        document
+          .querySelector("#step-" + stepNumber)
+          .classList.remove("d-none");
+        /**
+         * Select the form step circle (progress bar).
+         */
+        const formStepCircle = document.querySelector(
+          'li[step="' + stepNumber + '"]'
+        );
+        /**
+         * Mark the current form step as active.
+         */
+        formStepCircle.classList.remove(
+          "form-stepper-unfinished",
+          "form-stepper-completed"
+        );
+        formStepCircle.classList.add("form-stepper-active");
+        /**
+         * Loop through each form step circles.
+         * This loop will continue up to the current step number.
+         * Example: If the current step is 3,
+         * then the loop will perform operations for step 1 and 2.
+         */
+        for (let index = 0; index < stepNumber; index++) {
+          /**
+           * Select the form step circle (progress bar).
+           */
+          const formStepCircle = document.querySelector(
+            'li[step="' + index + '"]'
+          );
+          /**
+           * Check if the element exist. If yes, then proceed.
+           */
+          if (formStepCircle) {
+            /**
+             * Mark the form step as completed.
+             */
+            formStepCircle.classList.remove(
+              "form-stepper-unfinished",
+              "form-stepper-active"
+            );
+            formStepCircle.classList.add("form-stepper-completed");
+          }
+        }
+      };
+      /**
+       * Select all form navigation buttons, and loop through them.
+       */
+      document
+        .querySelectorAll(".btn-navigate-form-step")
+        .forEach((formNavigationBtn) => {
+          /**
+           * Add a click event listener to the button.
+           */
+          formNavigationBtn.addEventListener("click", () => {
+            /**
+             * Get the value of the step.
+             */
+            const stepNumber = parseInt(
+              formNavigationBtn.getAttribute("step_number")
+            );
+            /**
+             * Call the function to navigate to the target form step.
+             */
+            navigateToFormStep(stepNumber);
+          });
+        });
+    </script>
     <!--====== jquery js ======-->
     <script src="../../assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="../../assets/js/vendor/jquery-1.12.4.min.js"></script>
