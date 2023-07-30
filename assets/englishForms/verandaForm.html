@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <!--====== Required meta tags ======-->
     <meta charset="utf-8" />
@@ -50,6 +50,7 @@
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="../../assets/css/responsive.css" />
   </head>
+
   <body>
     <!--====== PRELOADER PART START ======-->
 
@@ -60,6 +61,10 @@
       </div>
     </div>
 
+    <!--====== PRELOADER PART START ======-->
+
+    <!--====== HEADER PART START ======-->
+
     <header class="header-area">
       <div class="container">
         <div class="row">
@@ -67,7 +72,7 @@
             <nav
               class="navbar navbar-expand-lg d-flex flex-row justify-content-between"
             >
-              <a class="navbar-brand" href="../../en.html">
+              <a class="navbar-brand" href="../../index.html">
                 <img
                   src="../../assets/images/logo.png"
                   alt="Logo"
@@ -85,1003 +90,1032 @@
       <!-- container -->
     </header>
 
-    <!--====== HEADER PART ENDS ======-->
-    <div class="container pt-150">
-      <div class="col-lg-12">
-        <div class="contact-form">
-          <form
-            id="contact-form"
-            action="https://formsubmit.co/9da5500386dcb89cc2e83a988c846328"
-            method="post"
-            data-toggle="validator"
-            enctype="multipart/form-data"
-          >
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingVerandaDimension">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseVerandaDimension"
-                    aria-expanded="true"
-                    aria-controls="collapseVerandaDimension"
-                  >
-                    Veranda Dimensions
-                  </button>
-                </h2>
-                <div
-                  id="collapseVerandaDimension"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingVerandaDimension"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div
-                      class="accordion-body collapsed d-flex flex-lg-row flex-column justify-content-between align-items-center"
-                    >
-                      <div class="col-12 col-lg-6 p-3 o-2">
-                        <p class="p-lg-3">
-                          <label for="Length"
-                            >Depth (Diepte): (Maximum 600cm)</label
-                          >
-                          <input type="text" name="depth" class="w-100" />
-                        </p>
-                        <p class="p-lg-3 o-2">
-                          <label for="width">Width (Breedte):</label>
-                          <input type="text" name="width" class="w-100" />
-                        </p>
-                      </div>
-                      <div class="col-12 col-lg-6 text-center">
-                        <img src="../images/depth.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!--FORM START POINT-->
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingModel">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseModel"
-                    aria-expanded="false"
-                    aria-controls="collapseModel"
-                  >
-                    Veranda Type
-                  </button>
-                </h2>
-                <div
-                  id="collapseModel"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingModel"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div
-                    class="accordion-body d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                  >
-                    <div>
-                      <img
-                        src="../images/form-images/self-standing-veranda.png"
-                        alt="self standing veranda"
-                      />
-                      <div>
-                        <input
-                          type="radio"
-                          name="verandaType"
-                          value="Self Standing Veranda"
-                        />
-                        <label for="selfStandingVeranda"
-                          >Free Standing Veranda</label
-                        >
-                      </div>
-                    </div>
-                    <div>
-                      <img
-                        src="../images/form-images/fixed-veranda.png"
-                        alt="fixed veranda"
-                      />
-                      <div>
-                        <input
-                          type="radio"
-                          name="verandaType"
-                          value="Fixed Veranda"
-                        />
-                        <label for="selfStandingVeranda">Fixed Veranda</label>
-                      </div>
-                    </div>
-                  </div>
+    <div class="container mt-150">
+      <div id="multi-step-form-container">
+        <!-- Form Steps / Progress Bar -->
+        <ul
+          class="form-stepper form-stepper-horizontal text-center mx-auto pl-0"
+        >
+          <!-- Step 1 -->
+          <li
+            class="form-stepper-active text-center form-stepper-list"
+            step="1"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle">
+                <span>1</span>
+              </span>
+              <div class="label">Veranda Dimensions</div>
+            </a>
+          </li>
+          <!-- Step 2 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="2"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>2</span>
+              </span>
+              <div class="label text-muted">Type</div>
+            </a>
+          </li>
+          <!-- Step 3 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="3"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>3</span>
+              </span>
+              <div class="label text-muted">Color</div>
+            </a>
+          </li>
+          <!-- Step 4 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="4"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>4</span>
+              </span>
+              <div class="label text-muted">Style</div>
+            </a>
+          </li>
+          <!-- Step 5 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="5"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>5</span>
+              </span>
+              <div class="label text-muted">Dak</div>
+            </a>
+          </li>
+          <!-- Step 6 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="6"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>6</span>
+              </span>
+              <div class="label text-muted">Links</div>
+            </a>
+          </li>
+          <!-- Step 7 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="7"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>7</span>
+              </span>
+              <div class="label text-muted">Rechts</div>
+            </a>
+          </li>
+          <!-- Step 8 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="8"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>8</span>
+              </span>
+              <div class="label text-muted">Voorkant</div>
+            </a>
+          </li>
+          <!-- Step 9 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="9"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>9</span>
+              </span>
+              <div class="label text-muted">LED</div>
+            </a>
+          </li>
+          <!-- Step 10 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="10"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>10</span>
+              </span>
+              <div class="label text-muted">Zonwering</div>
+            </a>
+          </li>
+          <!-- Step 11 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="11"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>11</span>
+              </span>
+              <div class="label text-muted">Montage</div>
+            </a>
+          </li>
+          <!-- Step 12 -->
+          <li
+            class="form-stepper-unfinished text-center form-stepper-list"
+            step="12"
+          >
+            <a class="mx-2">
+              <span class="form-stepper-circle text-muted">
+                <span>12</span>
+              </span>
+              <div class="label text-muted">Send</div>
+            </a>
+          </li>
+        </ul>
+        <!-- Step Wise Form Content -->
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/9da5500386dcb89cc2e83a988c846328"
+          method="post"
+          data-toggle="validator"
+          enctype="multipart/form-data"
+        >
+          <label for="verandaForm" hidden>Veranda form</label>
+          <input type="hidden" name="verandaForm" id="verandaForm" />
+          <!-- Step 1 Content -->
+          <section id="step-1" class="form-step">
+            <h2 class="font-normal">Veranda Dimensions</h2>
+            <!-- Step 1 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-lg-row flex-column justify-content-between align-items-center"
+              >
+                <div class="col-12 col-lg-6 p-3 o-2">
+                  <p class="p-lg-3">
+                    <label for="diepte">Depth: (Maximaal 600cm)</label>
+                    <input
+                      type="text"
+                      name="diepte"
+                      placeholder="250cm"
+                      class="w-100"
+                    />
+                  </p>
+                  <p class="p-lg-3 o-2">
+                    <label for="breedte">Width:</label>
+                    <input
+                      type="text"
+                      name="breedte"
+                      placeholder="250cm"
+                      class="w-100"
+                    />
+                  </p>
+                </div>
+                <div class="col-12 col-lg-6 text-center">
+                  <img src="../images/diepte.png" alt="" />
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    Veranda Color
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div>
-                      <div
-                        class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                      >
-                        <div>
-                          <img
-                            src="../images/form-images/black-veranda.png"
-                            alt=""
-                          />
-                          <div>
-                            <input
-                              type="radio"
-                              name="verandaColor"
-                              value="Black"
-                            />
-                            <label for="Black">Black</label>
-                          </div>
-                        </div>
-                        <div>
-                          <img
-                            src="../images/form-images/antraciet-veranda.png"
-                            alt=""
-                          />
-                          <div>
-                            <input
-                              type="radio"
-                              name="verandaColor"
-                              value="Antraciet"
-                            />
-                            <label for="Antraciet">Antraciet</label>
-                          </div>
-                        </div>
-                        <div>
-                          <img
-                            src="../images/form-images/cream-veranda.png"
-                            alt=""
-                          />
-                          <div>
-                            <input
-                              type="radio"
-                              name="verandaColor"
-                              value="Cream"
-                            />
-                            <label for="Cream">Cream</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="2"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 2 Content, default hidden on page load. -->
+          <section id="step-2" class="form-step d-none">
+            <h2 class="font-normal">Type</h2>
+            <!-- Step 2 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img
+                    src="../images/form-images/self-standing-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Type"
+                      value="Vrijstaande Veranda"
+                    />
+                    <label for="Type">Detached Veranda</label>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    Model
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div>
-                      <div
-                        class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                      >
-                        <div>
-                          <img
-                            src="../images/form-images/round-model-veranda.png"
-                            alt=""
-                          />
-                          <div>
-                            <input
-                              type="radio"
-                              name="verandaModel"
-                              value="round"
-                            />
-                            <label for="round">Round Model</label>
-                          </div>
-                        </div>
-                        <div>
-                          <img
-                            src="../images/form-images/straight-model-veranda.png"
-                            alt=""
-                          />
-                          <div>
-                            <input
-                              type="radio"
-                              name="verandaModel"
-                              value="straight"
-                            />
-                            <label for="straight">Straight Model</label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingLED">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseLED"
-                    aria-expanded="false"
-                    aria-controls="collapseLED"
-                  >
-                    LED
-                  </button>
-                </h2>
-                <div
-                  id="collapseLED"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingLED"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div
-                      class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                    >
-                      <div>
-                        <img
-                          src="../images/form-images/led-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input type="radio" name="verandaLED" value="LED" />
-                          <label for="LED">LED</label>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/noLed-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLED"
-                            value="no LED"
-                          />
-                          <label for="straight">No LED</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFour">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    Roof
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div
-                      class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                    >
-                      <div>
-                        <img
-                          src="../images/form-images/glass-top-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input type="radio" name="verandaTop" value="Glass" />
-                          <label for="glass">Glass</label>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/polycarbonate-clear-top-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaTop"
-                            value="Polycarbonate clear"
-                          />
-                          <label for="Polycarbonat clear"
-                            >Polycarbonate clear</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/polycarbonate-opaque-top-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaTop"
-                            value="Polycarbonate opaque"
-                          />
-                          <label for="Polycarbonate opaque"
-                            >Polycarbonate opaque</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/glass-opaque-top-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaTop"
-                            value="Glass opaque"
-                          />
-                          <label for="Glass opaque">Glass opaque</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFront">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFront"
-                    aria-expanded="false"
-                    aria-controls="collapseFront"
-                  >
-                    Front
-                  </button>
-                </h2>
-                <div
-                  id="collapseFront"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFront"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div
-                      class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                    >
-                      <div>
-                        <img
-                          src="../images/form-images/front-open-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaFront"
-                            value="open"
-                          />
-                          <label for="open">Open</label>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/front-slidingGlassSystem-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaFront"
-                            value="Sliding Glass System"
-                          />
-                          <label for="straight">Sliding Glass System</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapse"
-                  >
-                    Left
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div
-                      class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                    >
-                      <div>
-                        <img
-                          src="../images/form-images/side-open-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input type="radio" name="verandaLeft" value="Open" />
-                          <label for="open">Open</label>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/side-wedge-polycarbonate-clear-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLeft"
-                            value="Polycarbonate wedge clear"
-                          />
-                          <label for="Polycarbonate wedge clear"
-                            >Polycarbonate wedge clear</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/side-polycarbonate-wedge-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLeft"
-                            value="Polycarbonate wedge opaque"
-                          />
-                          <label for="Polycarbonate wedge opaque"
-                            >Polycarbonate wedge opaque</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/side-wedge-glass-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLeft"
-                            value="Glass wedge"
-                          />
-                          <label for="Glass wedge">Glass wedge</label>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/side-polycarbonateWedge-aluminumWall-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLeft"
-                            value="Polycarbonat wedge with aluminium wall"
-                          />
-                          <label for="Polycarbonat wedge with aluminium wall"
-                            >Polycarbonat wedge opaque<br />with aluminium
-                            wall</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/glassWedge-aluminumWall-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLeft"
-                            value="Glass wedge with aluminium wall"
-                          />
-                          <label for="Glass wedge with aluminium wall"
-                            >Glass wedge with aluminium wall</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/clearPolycarbonateWedge-aluminumWall-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLeft"
-                            value="Polycarbonate clear wedge with aluminum wall"
-                          />
-                          <label
-                            for="Polycarbonate clear wedge with aluminum wall"
-                            >Polycarbonate wedge clear<br />with aluminum
-                            wall</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/side-glass-wedge-sldingGlassSystem-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLeft"
-                            value="Glass wedge with sliding glass door"
-                          />
-                          <label for="Glass wedge with sliding glass door"
-                            >Glass wedge with sliding glass door</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/aluminumWall-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaLeft"
-                            value="Aluminum Wall"
-                          />
-                          <label for="Aluminum wall">Aluminum wall</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingAwning">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseAwning"
-                    aria-expanded="false"
-                    aria-controls="collapseAwning"
-                  >
-                    Awning
-                  </button>
-                </h2>
-                <div
-                  id="collapseAwning"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingAwning"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div>
-                      <div
-                        class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                      >
-                        <div>
-                          <img
-                            src="../images/form-images/sunRoof-Veranda.png"
-                            alt=""
-                          />
-                          <div>
-                            <input
-                              type="radio"
-                              name="verandaColor"
-                              value="including awning(sun roof)"
-                            />
-                            <label for="Black"
-                              >Including Awning(sun roof)</label
-                            >
-                          </div>
-                        </div>
-                        <div>
-                          <img
-                            src="../images/form-images/antraciet-veranda.png"
-                            alt=""
-                          />
-                          <div>
-                            <input
-                              type="radio"
-                              name="verandaColor"
-                              value="Not including Awning(Sun roof)"
-                            />
-                            <label for="Antraciet"
-                              >Not including awning(sun roof)</label
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapse"
-                  >
-                    Right
-                  </button>
-                </h2>
-                <div
-                  id="collapseSix"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingSix"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div
-                      class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
-                    >
-                      <div>
-                        <img
-                          src="../images/form-images/right-open.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Open"
-                          />
-                          <label for="open">Open</label>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/right-polycarbonate-clear-wedge.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Polycarbonate wedge clear"
-                          />
-                          <label for="Polycarbonate wedge clear"
-                            >Polycarbonate wedge clear</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/right-polycarbonate-wedge.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Polycarbonate wedge opaque"
-                          />
-                          <label for="Polycarbonate wedge opaque"
-                            >Polycarbonate wedge opaque</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/right-glass-wedge.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Glass wedge"
-                          />
-                          <label for="Glass wedge">Glass wedge</label>
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/right-polycarbonateWedge-aluminumWall.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Polycarbonat wedge with aluminium wall"
-                          />
-                          <label for="Polycarbonat wedge with aluminium wall"
-                            >Polycarbonat wedge opaque<br />with aluminium
-                            wall</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/right-glassWedge-aluminumWall.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Glass wedge with aluminium wall"
-                          />
-                          <label for="Glass wedge with aluminium wall"
-                            >Glass wedge with aluminium wall</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/right-polycarbonateWedge-aluminumWall.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Polycarbonate clear wedge with aluminum wall"
-                          />
-                          <label
-                            for="Polycarbonate clear wedge with aluminum wall"
-                            >Polycarbonate wedge clear<br />with aluminum
-                            wall</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/right-glassWedge-glassSystem.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Glass wedge with sliding glass door"
-                          />
-                          <label for="Glass wedge with sliding glass door"
-                            >Glass wedge with sliding glass door</label
-                          >
-                        </div>
-                      </div>
-                      <div>
-                        <img
-                          src="../images/form-images/aluminumWall-veranda.png"
-                          alt=""
-                        />
-                        <div>
-                          <input
-                            type="radio"
-                            name="verandaRight"
-                            value="Aluminum Wall"
-                          />
-                          <label for="Aluminum wall">Aluminum wall</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMontage">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseMontage"
-                    aria-expanded="false"
-                    aria-controls="collapseMontage"
-                  >
-                    Include Installation
-                  </button>
-                </h2>
-                <div
-                  id="collapseMontage"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingMontage"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <select
-                      name="montage"
-                      id="montage"
-                      class="w-25 text-center"
-                    >
-                      <option value="yes">yes</option>
-                      <option value="no">no</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingDelivery">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseDelivery"
-                    aria-expanded="false"
-                    aria-controls="collapseDelivery"
-                  >
-                    Including Delivery
-                  </button>
-                </h2>
-                <div
-                  id="collapseDelivery"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingDelivery"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body text-center">
-                    <select name="Delivery" class="w-75" required>
-                      <option value="yes">Yes (2€ per km)</option>
-                      <option value="no">Pickup</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingcontactInfo">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsecontactInfo"
-                    aria-expanded="false"
-                    aria-controls="collapsecontactInfo"
-                  >
-                    Contact Info
-                  </button>
-                </h2>
-                <div
-                  id="collapsecontactInfo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingcontactInfo,"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <div class="d-flex flex-column justify-content-around">
-                      <p class="mb-10">
-                        <label for="firstName">First Name:</label>
-                        <input
-                          type="text"
-                          name="firstName"
-                          id="firstName"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="lastName">Last Name:</label>
-                        <input
-                          type="text"
-                          name="lastName"
-                          id="lastName"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="email">E-Mail:</label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="phone">Phone Number:</label>
-                        <input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          placeholder="Inclusief landcode (bijv. +32)"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="postcode">Postcode:</label>
-                        <input
-                          type="text"
-                          name="postcode"
-                          id="postcode"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="city">City:</label>
-                        <input
-                          type="text"
-                          name="city"
-                          id="city"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="street">Street:</label>
-                        <input
-                          type="text"
-                          name="street"
-                          id="street"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                      <p class="mb-10">
-                        <label for="housenumber">House number:</label>
-                        <input
-                          type="text"
-                          name="housenumber"
-                          id="housenumber"
-                          class="w-100"
-                          required
-                        />
-                      </p>
-                    </div>
+                <div>
+                  <img src="../images/form-images/fixed-veranda.png" alt="" />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Type"
+                      value="Vaststaande Veranda"
+                    />
+                    <label for="Type">Fixed Veranda</label>
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="d-flex flex-column flex-md-row justify-content-between pt-100"
-            >
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="1"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="3"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 3 Content, default hidden on page load. -->
+          <section id="step-3" class="form-step d-none">
+            <h2 class="font-normal">Color</h2>
+            <!-- Step 3 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img src="../images/form-images/black-veranda.png" alt="" />
+                  <div>
+                    <input type="radio" name="Kleur" value="Zwart (RAL9005)" />
+                    <label for="Kleur">Black (RAL9005)</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/antraciet-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Kleur"
+                      value="Antraciet (RAL7016)"
+                    />
+                    <label for="Antraciet">Anthracite (RAL7016)</label>
+                  </div>
+                </div>
+                <div>
+                  <img src="../images/form-images/cream-veranda.png" alt="" />
+                  <div>
+                    <input type="radio" name="Kleur" value="Cream (RAL9001)" />
+                    <label for="Kleur">Creame (RAL9001)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="2"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="4"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 4 Content, default hidden on page load. -->
+          <section id="step-4" class="form-step d-none">
+            <h2 class="font-normal">Model</h2>
+            <!-- Step 4 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img
+                    src="../images/form-images/round-model-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="Model" value="Rond" />
+                    <label for="rond">Round Model</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/straight-model-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="Model" value="Recht" />
+                    <label for="recht">Straight Model</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="3"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="5"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 5 Content, default hidden on page load. -->
+          <section id="step-5" class="form-step d-none">
+            <h2 class="font-normal">Roof</h2>
+            <!-- Step 5 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img
+                    src="../images/form-images/glass-top-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="Dak" value="Gelamineerd glas" />
+                    <label for="Gelamineerd glas">Laminated glass</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/polycarbonate-clear-top-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Dak"
+                      value="Polycarbonaat helder"
+                    />
+                    <label for="Polycarbonaat helder"
+                      >Polycarbonate clear</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/polycarbonate-opaque-top-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Dak"
+                      value="Polycarbonaat opaal"
+                    />
+                    <label for="Polycarbonaat opaal">Polycarbonate opal</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/glass-opaque-top-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="Dak" value="Gelaagd glas opaal" />
+                    <label for="Gelaagd glas opaal">Laminated glass opal</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="4"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="6"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 6 Content, default hidden on page load. -->
+          <section id="step-6" class="form-step d-none">
+            <h2 class="font-normal">Left Side Wall</h2>
+            <!-- Step 6 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img
+                    src="../images/form-images/side-open-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="Links" value="Open" />
+                    <label for="Open">Open</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/side-wedge-polycarbonate-clear-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Links"
+                      value="Polycarbonate Spie Helder"
+                    />
+                    <label for="Polycarbonate Spie Helder"
+                      >Polycarbonate wedge clear</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/side-polycarbonate-wedge-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Links"
+                      value="Polycarbonate Spie Opaal"
+                    />
+                    <label for="Polycarbonate Spie Opaal"
+                      >Polycarbonate wedge opal</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/side-wedge-glass-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="Links" value="Glass Spie" />
+                    <label for="Glass Spie">Glass wedge</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/side-polycarbonateWedge-aluminumWall-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Links"
+                      value="Polycarbonat spie opaal met aluminium zijwand"
+                    />
+                    <label for="Polycarbonat spie opaal met aluminium zijwand"
+                      >Polycarbonate wedge opal<br />with aluminum
+                      sidewall</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/glassWedge-aluminumWall-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Links"
+                      value="Glazen spie met aluminium wand"
+                    />
+                    <label for="Glazen spie met aluminium wand"
+                      >Glass wedge with aluminum wall</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/clearPolycarbonateWedge-aluminumWall-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Links"
+                      value="Polycarbonaat spie helder met aluminium
+                            zijwand"
+                    />
+                    <label
+                      for="Polycarbonaat spie helder met aluminium
+                            zijwand"
+                      >Polycarbonate wedge clear<br />with aluminum
+                      sidewall</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/side-glass-wedge-sldingGlassSystem-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Links"
+                      value="Glazen spie met glazen schuifdeur"
+                    />
+                    <label for="Glazen spie met glazen schuifdeur"
+                      >Glass wedge with sliding glass door</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/aluminumWall-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Links"
+                      value="Aluminum rabat zijwand"
+                    />
+                    <label for="Aluminium rabat zijwand"
+                      >Aluminum rebate side wall</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="5"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="7"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 7 Content, default hidden on page load. -->
+          <section id="step-7" class="form-step d-none">
+            <h2 class="font-normal">Veranda Right Sidewall</h2>
+            <!-- Step 7 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img src="../images/form-images/right-open.png" alt="" />
+                  <div>
+                    <input type="radio" name="Rechts" value="Open" />
+                    <label for="Open">Open</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/right-polycarbonate-clear-wedge.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Rechts"
+                      value="Polycarbonaat spie helder"
+                    />
+                    <label for="Polycarbonaat spie helder"
+                      >Polycarbonate wedge clear</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/right-polycarbonate-wedge.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Rechts"
+                      value="Polycarbonaat spie opaal"
+                    />
+                    <label for="Polycarbonaat spie opaal"
+                      >Polycarbonate wedge opal</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/right-glass-wedge.png"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="Rechts" value="Glazen spie" />
+                    <label for="Glazen spie">Glass wedge</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/right-polycarbonateWedge-aluminumWall.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Rechts"
+                      value="Polycarbonaat spie opaal met aluminium
+                      zijwand"
+                    />
+                    <label
+                      for="Polycarbonaat spie opaal met aluminium
+                    zijwand"
+                      >Polycarbonate wedge opal<br />with aluminum
+                      sidewall</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/right-glassWedge-aluminumWall.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Rechts"
+                      value="Glazen spie met aluminium wand"
+                    />
+                    <label for="Glazen spie met aluminium wand"
+                      >Glass wedge with aluminum wall</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/right-polycarbonateWedge-aluminumWall.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Rechts"
+                      value="Polycarbonaat spie helder met aluminium
+                      zijwand"
+                    />
+                    <label
+                      for="Polycarbonaat spie helder met aluminium
+                    zijwand"
+                      >Polycarbonate wedge clear<br />with aluminum
+                      sidewall</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/right-glassWedge-glassSystem.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Rechts"
+                      value="Glazen spie met glazen schuifdeur"
+                    />
+                    <label for="Glazen spie met glazen schuifdeur"
+                      >Glass wedge with sliding glass door</label
+                    >
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/aluminumWall-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Rechts"
+                      value="Aluminium zijwand"
+                    />
+                    <label for="Aluminium zijwand">Aluminum sidewall</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="6"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="8"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 8 Content, default hidden on page load. -->
+          <section id="step-8" class="form-step d-none">
+            <h2 class="font-normal">Front</h2>
+            <!-- Step 8 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img
+                    src="../images/form-images/front-open-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input type="radio" name="Voorkant" value="open" />
+                    <label for="open">Open</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/front-slidingGlassSystem-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Voorkant"
+                      value="Glazen Schuifwand"
+                    />
+                    <label for="Voorkant">Glass Sliding Wall</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="7"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="9"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 9 Content, default hidden on page load. -->
+          <section id="step-9" class="form-step d-none">
+            <h2 class="font-normal">LED</h2>
+            <!-- Step 9 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img src="../images/form-images/led-veranda.png" alt="" />
+                  <div>
+                    <input type="radio" name="LED" value="LED" />
+                    <label for="LED">With LED</label>
+                  </div>
+                </div>
+                <div>
+                  <img src="../images/form-images/noLed-veranda.png" alt="" />
+                  <div>
+                    <input type="radio" name="LED" value="Geen LED" />
+                    <label for="LED">No LED</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="8"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="10"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 10 Content, default hidden on page load. -->
+          <section id="step-10" class="form-step d-none">
+            <h2 class="font-normal">Sunroof</h2>
+            <!-- Step 10 input fields -->
+            <div class="mt-3">
+              <div
+                class="d-flex flex-row flex-wrap justify-content-center justify-content-md-around"
+              >
+                <div>
+                  <img src="../images/form-images/sunRoof-Veranda.png" alt="" />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Zonwering"
+                      value="Met Zonwering"
+                    />
+                    <label for="Zonwering">With Sunroof</label>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src="../images/form-images/noSunRoof-veranda.png"
+                    alt=""
+                  />
+                  <div>
+                    <input
+                      type="radio"
+                      name="Zonwering"
+                      value="Zonder zonwering"
+                    />
+                    <label for="straight">Without Sunroof</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="9"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="11"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 11 Content, default hidden on page load. -->
+          <section id="step-11" class="form-step d-none">
+            <h2 class="font-normal">Installation</h2>
+            <!-- Step 11 input fields -->
+            <div class="mt-3">
+              <p>Incl. Installation</p>
+              <select name="montage" id="montage" class="w-25 text-center">
+                <option value="Ja">Yes</option>
+                <option value="Nee">No</option>
+              </select>
+
+              <p>Delivery or self-collection</p>
+              <select name="Delivery" class="w-75" required>
+                <option value="Ja">Yes (2€ per kilometer)</option>
+                <option value="Nee">Self Collection</option>
+              </select>
+            </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="10"
+              >
+                Previous
+              </button>
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="12"
+              >
+                Next
+              </button>
+            </div>
+          </section>
+          <!-- Step 12 Content, default hidden on page load. -->
+          <section id="step-12" class="form-step d-none">
+            <h2 class="font-normal">Send</h2>
+            <!-- Step 12 input fields -->
+            <div class="mt-3">
+              <div class="d-flex flex-column justify-content-around">
+                <p class="mb-10">
+                  <label for="firstName">Full naam:</label>
+                  <input
+                    type="text"
+                    name="VolledigeNaam"
+                    id="VolledigeNaam"
+                    class="w-100"
+                    required
+                  />
+                </p>
+
+                <p class="mb-10">
+                  <label for="straatNaam">Street:</label>
+                  <input
+                    type="text"
+                    name="straatNaam"
+                    id="straatNaam"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="HuisNummer">House number:</label>
+                  <input
+                    type="text"
+                    name="HuisNummer"
+                    id="HuisNummer"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="postcode">Postcode:</label>
+                  <input
+                    type="text"
+                    name="Postcode"
+                    id="Postcode"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="Woonplaats">City:</label>
+                  <input
+                    type="text"
+                    name="Woonplaats"
+                    id="Woonplaats"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="email">E-Mail:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="w-100"
+                    required
+                  />
+                </p>
+                <p class="mb-10">
+                  <label for="Telefoonnummer">Cellphone Number:</label>
+                  <input
+                    type="tel"
+                    name="Telefoonnummer"
+                    id="Telefoonnummer"
+                    placeholder="Inclusief landcode(ex. +32)"
+                    class="w-100"
+                    required
+                  />
+                </p>
+              </div>
               <div>
                 <div>
                   <h3>Extra notes:</h3>
-                  <span
-                    class="wpcf7-form-control-wrap"
-                    data-name="your-message"
-                  >
+                  <span class="wpcf7-form-control-wrap" data-name="Opmerking">
                     <textarea
-                      name="your-message"
+                      name="Opmerking"
                       cols="5"
                       rows="3"
                       class="wpcf7-form-control wpcf7-textarea"
@@ -1094,20 +1128,30 @@
                   <input
                     type="file"
                     name="attachment"
+                    id="attachment"
                     accept="image/png, image/jpeg"
                   />
+
                   <p>
-                    <small
-                      >Upload a photo of the area where you want the porch to
-                      be.</small
+                    <small>
+                      Upload a photo of where the veranda will be placed.</small
                     >
                   </p>
                 </div>
               </div>
-              <input class="main-btn mt-20 align-self-center" type="submit" />
             </div>
-          </form>
-        </div>
+            <div class="mt-3">
+              <button
+                class="button btn-navigate-form-step"
+                type="button"
+                step_number="11"
+              >
+                Previous
+              </button>
+              <button class="button submit-btn" type="submit">Send</button>
+            </div>
+          </section>
+        </form>
       </div>
     </div>
 
@@ -1120,10 +1164,10 @@
             <div class="col-lg-3 col-md-5 col-sm-7 text-center">
               <div class="footer-logo mt-40">
                 <a href="#" class="mx-auto">
-                  <img src="../images/logo.png" alt="Logo" />
+                  <img src="../../assets/images/logo.png" alt="Logo" />
                 </a>
                 <ul class="footer-social mt-25">
-                  <li>Company Number: 0795.573.610</li>
+                  <li>Ondernemingsnummer: 0795.573.610</li>
                   <li>
                     <a href="https://www.instagram.com/verandabeyond.be/"
                       ><i class="lni-instagram"></i
@@ -1140,7 +1184,7 @@
               <!-- footer logo -->
             </div>
             <div>
-              <a href="../../privacyPolicyEn.html">Privacy verklaring</a>
+              <a href="privacyPolicyNL.html">Privacy verklaring</a>
             </div>
           </div>
           <!-- row -->
@@ -1149,8 +1193,9 @@
       </div>
       <!-- container -->
     </section>
+    <!-- COOKIES-->
 
-    <!--====== FOOTER PART ENDS ======-->
+    <!--====== REQUEST QUOTE PART END ======-->
 
     <!--====== BACK TO TOP PART START ======-->
 
@@ -1158,6 +1203,102 @@
 
     <!--====== BACK TO TOP PART ENDS ======-->
 
+    <!--form js-->
+    <script>
+      /**
+       * Define a function to navigate betweens form steps.
+       * It accepts one parameter. That is - step number.
+       */
+      const navigateToFormStep = (stepNumber) => {
+        /**
+         * Hide all form steps.
+         */
+        document.querySelectorAll(".form-step").forEach((formStepElement) => {
+          formStepElement.classList.add("d-none");
+        });
+        /**
+         * Mark all form steps as unfinished.
+         */
+        document
+          .querySelectorAll(".form-stepper-list")
+          .forEach((formStepHeader) => {
+            formStepHeader.classList.add("form-stepper-unfinished");
+            formStepHeader.classList.remove(
+              "form-stepper-active",
+              "form-stepper-completed"
+            );
+          });
+        /**
+         * Show the current form step (as passed to the function).
+         */
+        document
+          .querySelector("#step-" + stepNumber)
+          .classList.remove("d-none");
+        /**
+         * Select the form step circle (progress bar).
+         */
+        const formStepCircle = document.querySelector(
+          'li[step="' + stepNumber + '"]'
+        );
+        /**
+         * Mark the current form step as active.
+         */
+        formStepCircle.classList.remove(
+          "form-stepper-unfinished",
+          "form-stepper-completed"
+        );
+        formStepCircle.classList.add("form-stepper-active");
+        /**
+         * Loop through each form step circles.
+         * This loop will continue up to the current step number.
+         * Example: If the current step is 3,
+         * then the loop will perform operations for step 1 and 2.
+         */
+        for (let index = 0; index < stepNumber; index++) {
+          /**
+           * Select the form step circle (progress bar).
+           */
+          const formStepCircle = document.querySelector(
+            'li[step="' + index + '"]'
+          );
+          /**
+           * Check if the element exist. If yes, then proceed.
+           */
+          if (formStepCircle) {
+            /**
+             * Mark the form step as completed.
+             */
+            formStepCircle.classList.remove(
+              "form-stepper-unfinished",
+              "form-stepper-active"
+            );
+            formStepCircle.classList.add("form-stepper-completed");
+          }
+        }
+      };
+      /**
+       * Select all form navigation buttons, and loop through them.
+       */
+      document
+        .querySelectorAll(".btn-navigate-form-step")
+        .forEach((formNavigationBtn) => {
+          /**
+           * Add a click event listener to the button.
+           */
+          formNavigationBtn.addEventListener("click", () => {
+            /**
+             * Get the value of the step.
+             */
+            const stepNumber = parseInt(
+              formNavigationBtn.getAttribute("step_number")
+            );
+            /**
+             * Call the function to navigate to the target form step.
+             */
+            navigateToFormStep(stepNumber);
+          });
+        });
+    </script>
     <!--====== jquery js ======-->
     <script src="../../assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="../../assets/js/vendor/jquery-1.12.4.min.js"></script>
