@@ -75,9 +75,12 @@
               <div
                 class="col-md-9 d-flex flex-row flex-lg-column justify-content-center align-items-center mx-auto"
               >
-                <a class="navbar-brand col-md-3" href="index.html">
-                  <img src="assets/images/logo" alt="Logo" id="logo" />
-                </a>
+                <div class="d-flex flex-column">
+                  <a class="navbar-brand col-md-3" href="index.html">
+                    <img src="assets/images/logo" alt="Logo" id="logo" />
+                  </a>
+                  <span>In samenwerking met ValkVeranda</span>
+                </div>
                 <!-- Logo -->
                 <button
                   class="navbar-toggler"
@@ -783,6 +786,11 @@
                   method="post"
                   data-toggle="validator"
                 >
+                  <input
+                    type="hidden"
+                    name="_cc"
+                    value="info@verandabeyond.be"
+                  />
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="single-form form-group">
